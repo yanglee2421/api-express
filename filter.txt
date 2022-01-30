@@ -116,3 +116,16 @@ fanyi.baidu.com##.new-header-title
 fanyi.baidu.com##div.container:first-child > div.header:first-child > div.inner > div.download-guide:nth-child(5) > ul.download-guide-ul > li.guide-list.download-app:last-child
 fanyi.baidu.com##div.container:first-child > div.footer.cleafix:nth-child(7) > div.extra-wrap:first-child > a.sideQrContainer:first-child
 fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > section.bottom-intro:nth-child(41) > div.intro-title:first-child
+
+! 2022-01-30 https://fanyi.baidu.com
+fanyi.baidu.com###footer-products-container
+baike.baidu.com###header_wrapper
+baike.baidu.com###J-super-layer-promote
+
+! 2022-01-30 https://baike.baidu.com
+||bkssl.bdimg.com/static/wiki-lemma/*$image
+baike.baidu.com##.new-side-share.new-bdsharebuttonbox
+||baikebcs.bdimg.com/adpic/*$image
+
+
+
