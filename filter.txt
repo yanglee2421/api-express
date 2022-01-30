@@ -103,3 +103,16 @@ m.jiemian.com##section.content:nth-child(4) > div.content-inner > div.content-co
 gitee.com##.git-project-desc-wrapper
 gitee.com##.add-readme-tip.message.info.ui
 
+! 2022-01-30 https://baike.baidu.com
+baike.baidu.com###J-baikeapp-promote-front-8450cc1
+www.bing.com###bnp\.nid\.63475
+
+! 2022-01-30 https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.css-cazai8.OpenInAppButton
+
+! 2022-01-30 https://fanyi.baidu.com
+fanyi.baidu.com##.new-header-dl
+fanyi.baidu.com##.new-header-title
+fanyi.baidu.com##div.container:first-child > div.header:first-child > div.inner > div.download-guide:nth-child(5) > ul.download-guide-ul > li.guide-list.download-app:last-child
+fanyi.baidu.com##div.container:first-child > div.footer.cleafix:nth-child(7) > div.extra-wrap:first-child > a.sideQrContainer:first-child
+fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > section.bottom-intro:nth-child(41) > div.intro-title:first-child
