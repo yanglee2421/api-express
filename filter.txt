@@ -127,5 +127,5 @@ baike.baidu.com###J-super-layer-promote
 baike.baidu.com##.new-side-share.new-bdsharebuttonbox
 ||baikebcs.bdimg.com/adpic/*$image
 
-
+blog.csdn.net##span.feed-Sign-span:nth-child(20)
 
