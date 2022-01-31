@@ -10,3 +10,5 @@ github.com/用户名/仓库名/raw/分支名/文件路径
 
 gitee.com下：
 gitee.com/用户名/仓库名/raw/分支名/文件路径
+
+SSH
