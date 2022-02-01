@@ -132,3 +132,9 @@ blog.csdn.net##span.feed-Sign-span:nth-child(20)
 ! 2022-01-31 https://pan.baidu.com
 pan.baidu.com##.gOIbzPb
 ||nd-static.bdstatic.com/m-static/interface-widget-1/wpguide/img/
+
+! 2022-02-01 https://www.163.com
+||static.ws.126.net/f2e/www/index2014/images/$image
+
+! 2022-02-01 https://www.ithome.com
+www.ithome.com##.down_app
