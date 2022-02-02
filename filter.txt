@@ -4,7 +4,6 @@
 ||img12.360buyimg.com
 ||cctv.bwv8.com
 ||img14.360buyimg.com
-2595tom.com###dipiao_h5
 
 !2022-01-29 adguard
 m.biquxsw.com##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
@@ -49,32 +48,11 @@ m.xbiquge.so##div.show-app2:nth-child(4)
 mail.163.com###smartBottomAd
 post.m.smzdm.com###__layout > div > div.page-container > div.footer-banner-wrap:nth-child(16)
 post.m.smzdm.com###__layout > div > div.page-container > div.position-tool:nth-child(17) > a.app-position:last-child > img
-2502tom.com###dipiao_h5 > div > a:last-child > img
-2502tom.com###\35 Mby7wyVcaEoOV2RpZp7zp3mvWvP > p > a.two_row_0 > img.cctv-img
-2502tom.com###dipiao_h5 > div
-2502tom.com###izYOhyV81YoljOXAgDQshglbdQXgi14h
-2502tom.com###izYOhyV81YoljOXAgDQshglbdQXgi14h
-2502tom.com###\38 kbYWwq4XLcg4zmwpOCbnpgI
-2502tom.com###rATIgUyrRvnvSbt8tUzp9g5JP3N
-2502tom.com##div.banner-cctv-style
-2502tom.com##div.home-banner-A1
-2502tom.com##div.home-banner-A3
-2502tom.com##div.home-banner-A4
-2502tom.com##div.play-banner-A1
-2502tom.com##div.play-banner-A3
-2502tom.com##div.play-banner-A4
-2502tom.com##div#dipiao_h5
-2502tom.com##div.list-banner-A1
-2502tom.com##div.list-banner-A3
-2502tom.com##div.list-banner-A4
-2502tom.com##p>a>img
 m.xbiquge.so##div.show-app2:nth-child(5)
 m.xbiquge.so##div.show-app2:nth-child(7)
 m.qiqidongman.com###g-header
 stske.dzypc.cn###form1 > div.young_box.young_con:nth-child(3) > section.young_video:first-child > div.young_play.top_video > div.young_cross:nth-child(6)
 m.apkpure.com##div.main.page-q:nth-child(4) > div.details:nth-child(3) > div.aegon-warp:last-child
-2573tom.com###dipiao_h5
-2573tom.com##p>a>img
 gov.cn##div.apptg:nth-child(31)
 bing.com###ev_talkbox_wrapper
 m.iqiyi.com###app > div:nth-child(2) > div > div > div:last-child > div > div.m-box-items.m-box-items-full:nth-child(2) > section.m-banner-img
@@ -83,9 +61,6 @@ m.bilibili.com###app > div.m-head > div.m-home:last-child > div.launch-app-btn.h
 m.bilibili.com###app > div.video > div.m-video-new.sticky > div.launch-app-btn.m-video-main-launchapp.visible-open-app-btn:nth-child(3) > div.m-video2-main-img
 m.youku.com###app > div > div:nth-child(7) > div.Corner-container
 m.youku.com###app > div > div:nth-child(4)
-2566tom.com##p>a>img
-8199tom.com##p>a>img
-2566tom.com###dipiao_h5
 image.baidu.com###boxBanner
 fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > a.app-bar:nth-child(10)
 m.xbiquge.so##div.show-app2:nth-child(3)
@@ -138,3 +113,7 @@ pan.baidu.com##.gOIbzPb
 
 ! 2022-02-01 https://www.ithome.com
 www.ithome.com##.down_app
+
+mob.iyingdi.com###default-container > div.post-detail-container > div.down-load-app-container.fixed:first-child
+baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined:nth-child(5)
+m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-content:first-child > div > div.ball-wrapper__1wwgl.ball-hidden__35xzn
