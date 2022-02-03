@@ -117,3 +117,7 @@ www.ithome.com##.down_app
 mob.iyingdi.com###default-container > div.post-detail-container > div.down-load-app-container.fixed:first-child
 baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined:nth-child(5)
 m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-content:first-child > div > div.ball-wrapper__1wwgl.ball-hidden__35xzn
+
+! 2022-02-02 https://zh.wikipedia.org
+zh.wikipedia.org###siteNotice
+zh.m.wikipedia.org###content > div.banner-container:first-child
