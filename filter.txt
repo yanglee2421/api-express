@@ -121,3 +121,7 @@ m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-cont
 ! 2022-02-02 https://zh.wikipedia.org
 zh.wikipedia.org###siteNotice
 zh.m.wikipedia.org###content > div.banner-container:first-child
+
+! 2022-02-02 https://juejin.cn
+||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/*
+juejin.cn##.recommend-box
