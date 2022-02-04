@@ -125,3 +125,5 @@ zh.m.wikipedia.org###content > div.banner-container:first-child
 ! 2022-02-02 https://juejin.cn
 ||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/*
 juejin.cn##.recommend-box
+
+zhihu.com###root > div.App > main.App-main:last-child > div.Question-mainEntity > button.OpenInAppButton.OpenInApp.css-cazai8:last-child
