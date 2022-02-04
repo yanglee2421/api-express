@@ -10,7 +10,7 @@ m.biquxsw.com##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
 m.biquxsw.com##div:first-child > div.show-app2:nth-child(4)
 m.biquxsw.com##div:first-child > div.show-app2:nth-child(7)
 m.ikmh88.com##div:contains(下方看小说)
-m.7stary.com#?#div:contains("/^\d{5}$/")
+m.7stary.com#?#div:contains(/^\d{5}$/)
 alibabacloud.com###J_3740376120-31-0-inner > div.hmod-alicloud-bottom-banner > div.BottomBanner.BottomBanner--visible > a.container:last-child > img.BottomBanner--h5-background:last-child
 lagou.com##div.course:nth-child(3) > div.push_bottom:last-child > div.push_bottom_table
 3g.163.com##div:last-child > div.widget-slider.widget-slider-article.bottom > div.widget-slider-article-content:last-child
@@ -128,4 +128,4 @@ juejin.cn##.recommend-box
 
 zhihu.com###root > div.App > main.App-main:last-child > div.Question-mainEntity > button.OpenInAppButton.OpenInApp.css-cazai8:last-child
 wukong.toutiao.com###body > div.float-openapp:first-child > div.btn
-wukong.toutiao.com##body > div:first-child
+wukong.toutiao.com##body > div:contains(/打开$/):first-child
