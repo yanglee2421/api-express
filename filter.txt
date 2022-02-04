@@ -128,4 +128,4 @@ juejin.cn##.recommend-box
 
 zhihu.com###root > div.App > main.App-main:last-child > div.Question-mainEntity > button.OpenInAppButton.OpenInApp.css-cazai8:last-child
 wukong.toutiao.com###body > div.float-openapp:first-child > div.btn
-wukong.toutiao.com##div:first-child
+wukong.toutiao.com##body > div:first-child
