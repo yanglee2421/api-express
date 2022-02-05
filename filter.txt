@@ -80,7 +80,7 @@ gitee.com##.add-readme-tip.message.info.ui
 
 ! 2022-01-30 https://baike.baidu.com
 baike.baidu.com###J-baikeapp-promote-front-8450cc1
-www.bing.com###bnp\.nid\.63475
+bing.com###bnp\.nid\.63475
 
 ! 2022-01-30 https://zhuanlan.zhihu.com
 zhuanlan.zhihu.com##.css-cazai8.OpenInAppButton
@@ -131,7 +131,6 @@ wukong.toutiao.com###body > div.float-openapp:first-child > div.btn
 wukong.toutiao.com##body > div:contains(/打开$/):first-child
 
 ! 2022-02-05 https://www.bing.com
-||www.bing.com/rp/*
-www.bing.com###b_context
-www.bing.com##.ev_talkbox_wrapper_min
-
+bing.com###b_context
+bing.com###b_mtp
+bing.com###ev_talkbox_wrapper
