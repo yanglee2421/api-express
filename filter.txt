@@ -129,3 +129,9 @@ juejin.cn##.recommend-box
 zhihu.com###root > div.App > main.App-main:last-child > div.Question-mainEntity > button.OpenInAppButton.OpenInApp.css-cazai8:last-child
 wukong.toutiao.com###body > div.float-openapp:first-child > div.btn
 wukong.toutiao.com##body > div:contains(/打开$/):first-child
+
+! 2022-02-05 https://www.bing.com
+||www.bing.com/rp/*
+www.bing.com###b_context
+www.bing.com##.ev_talkbox_wrapper_min
+
