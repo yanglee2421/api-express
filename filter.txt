@@ -136,4 +136,4 @@ bing.com###b_mtp
 bing.com###ev_talkbox_wrapper
 
 m.baidu.com###results-pre > div.c-result.result:nth-child(3) > div.c-result-content:first-child > div.mkt-ball-wrapper__2HtOM > div:first-child > a.ball-wrapper__3BTBO.c-blocka.ball-expand__x4D_-
-pixiv.net###spa-contents > div:nth-child(5) > div:nth-child(2) > div > div:first-child > div.premium-lead-new-t-info-home-top
+pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
