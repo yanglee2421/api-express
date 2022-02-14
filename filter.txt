@@ -146,3 +146,6 @@ zhidao.baidu.com###main-content > div.question-container:first-child > div.doodl
 
 ! 2022-02-13 https://www.acfun.cn
 www.acfun.cn##.app-guide
+
+! 2022-02-14 https://www.mumumh.xyz
+||dmya.lflmdm.com/upload/*
