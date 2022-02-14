@@ -143,3 +143,6 @@ xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > div.jsx-71858563.elevator
 xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > a.jsx-1603696139.go-home:nth-child(16)
 quark.sm.cn###sc_operating_activity_ball
 zhidao.baidu.com###main-content > div.question-container:first-child > div.doodle-container.show:nth-child(2)
+
+! 2022-02-13 https://www.acfun.cn
+www.acfun.cn##.app-guide
