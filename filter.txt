@@ -149,3 +149,6 @@ www.acfun.cn##.app-guide
 
 ! 2022-02-14 https://www.mumumh.xyz
 ||dmya.lflmdm.com/upload/*
+
+! 2022-02-17 https://gitee.com
+||images.gitee.com/uploads/images/2022/0211/*
