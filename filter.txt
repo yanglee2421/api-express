@@ -149,3 +149,6 @@ www.acfun.cn##.app-guide
 
 ! 2022-02-14 https://www.mumumh.xyz
 ||dmya.lflmdm.com/upload/*
+
+juejin.cn###juejin > div.view-container:first-child > div.open-button.app-open-button:last-child
+zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-content.Post-content-mobile > div.Post-Sub.Post-Sub-Mobile:last-child > button.OpenInAppButton.css-cazai8:nth-child(3)
