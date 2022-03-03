@@ -152,3 +152,6 @@ www.acfun.cn##.app-guide
 
 juejin.cn###juejin > div.view-container:first-child > div.open-button.app-open-button:last-child
 zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-content.Post-content-mobile > div.Post-Sub.Post-Sub-Mobile:last-child > button.OpenInAppButton.css-cazai8:nth-child(3)
+
+! 2022-02-17 https://gitee.com
+||images.gitee.com/uploads/images/2022/0211/*
