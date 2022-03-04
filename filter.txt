@@ -155,3 +155,7 @@ zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-conten
 
 ! 2022-02-17 https://gitee.com
 ||images.gitee.com/uploads/images/2022/0211/*
+
+! 2022-03-04 https://mail.google.com
+mail.google.com##.Ir
+
