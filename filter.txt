@@ -101,7 +101,6 @@ baike.baidu.com###J-super-layer-promote
 ||bkssl.bdimg.com/static/wiki-lemma/*$image
 baike.baidu.com##.new-side-share.new-bdsharebuttonbox
 ||baikebcs.bdimg.com/adpic/*$image
-
 blog.csdn.net##span.feed-Sign-span:nth-child(20)
 
 ! 2022-01-31 https://pan.baidu.com
@@ -113,7 +112,6 @@ pan.baidu.com##.gOIbzPb
 
 ! 2022-02-01 https://www.ithome.com
 www.ithome.com##.down_app
-
 mob.iyingdi.com###default-container > div.post-detail-container > div.down-load-app-container.fixed:first-child
 baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined:nth-child(5)
 m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-content:first-child > div > div.ball-wrapper__1wwgl.ball-hidden__35xzn
@@ -149,9 +147,8 @@ www.acfun.cn##.app-guide
 
 ! 2022-02-14 https://www.mumumh.xyz
 ||dmya.lflmdm.com/upload/*
-
 juejin.cn###juejin > div.view-container:first-child > div.open-button.app-open-button:last-child
-zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-content.Post-content-mobile > div.Post-Sub.Post-Sub-Mobile:last-child > button.OpenInAppButton.css-cazai8:nth-child(3)
+zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-content.Post-content-mobile > div.Post-Sub.Post-Sub-Mobile:last-child > button.OpenInAppButton.css-cazai8
 
 ! 2022-02-17 https://gitee.com
 ||images.gitee.com/uploads/images/2022/0211/*
