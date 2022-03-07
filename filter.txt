@@ -159,3 +159,9 @@ zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-conten
 ! 2022-03-04 https://mail.google.com
 mail.google.com##.Ir
 
+! 2022-03-07 https://www.w3cschool.cn
+||atts.w3cschool.cn/attachments/image/20220307/*
+||atts.w3cschool.cn/attachments/image/20220222/*
+www.w3cschool.cn###topbanner
+www.w3cschool.cn###rfbanner
+
