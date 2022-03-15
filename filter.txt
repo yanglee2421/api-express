@@ -162,3 +162,7 @@ mail.google.com##.Ir
 www.w3cschool.cn###topbanner
 www.w3cschool.cn###rfbanner
 
+! 2022-03-14 https://download.csdn.net
+||csdnimg.cn/download_wenku/wk_detail_ads/*
+! 2022-03-15 https://gitee.com
+||images.gitee.com/uploads/images/2022/0314/*
