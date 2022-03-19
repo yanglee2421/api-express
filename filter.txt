@@ -166,3 +166,11 @@ www.w3cschool.cn###rfbanner
 ||csdnimg.cn/download_wenku/wk_detail_ads/*
 ! 2022-03-15 https://gitee.com
 ||images.gitee.com/uploads/images/2022/0314/*
+
+||1rtb.com^$app=com.naver.linewebtoon.cn
+||pangolin-sdk-toutiao-b.com^$app=com.xiaoxiaobook.zuiread
+||yximgs.com^$app=com.xiaoxiaobook.zuiread
+||360buyimg.com^$app=com.xiaoxiaobook.zuiread
+||pglstatp-toutiao.com^$app=com.xiaoxiaobook.zuiread
+||ixigua.com^$app=com.xiaoxiaobook.zuiread
+||pangolin-sdk-toutiao.com^$app=com.xiaoxiaobook.zuiread
