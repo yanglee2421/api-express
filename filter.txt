@@ -198,3 +198,10 @@ www.w3cschool.cn###rfbanner
 ||pglstatp-toutiao.com^$app=com.kuaikan.comic
 ||pangolin-sdk-toutiao-b.com^$app=com.kuaikan.comic
 ||pangolin-sdk-toutiao.com^$app=com.kuaikan.comic
+! 2022-03-16 https://www.asus.com.cn
+||static.asus.com.cn/store/20220316/*$image
+www.asus.com.cn##.topNotice
+
+! 2022-03-22 https://gitee.com
+||images.gitee.com/uploads/images/2022/0322/*$image
+gitee.com##.people-image
