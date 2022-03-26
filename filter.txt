@@ -1,162 +1,162 @@
-	||1rtb.com^$app=com.naver.linewebtoon.cn
-	||360buyimg.com^$app=com.kuaikan.comic
-	||360buyimg.com^$app=com.xiaoxiaobook.zuiread
-	||amap.com^$app=com.kuaikan.comic
-	||atts.w3cschool.cn/attachments/image/20220222/*
-	||atts.w3cschool.cn/attachments/image/20220307/*
-	||baidu.com^$app=com.kuaikan.comic
-	||baikebcs.bdimg.com/adpic/*
-	||bkimg.cdn.bcebos.com/pic/*
-	||bkssl.bdimg.com/static/wiki-lemma/*
-	||cctv.bwv8.com
-	||cdn.cnbj1.fds.api.mi-img.com
-	||csdnimg.cn/download_wenku/wk_detail_ads/*
-	||ctobsnssdk.com^$app=com.kuaikan.comic
-	||dmya.lflmdm.com/upload/*
-	||dutils.com^$app=com.kuaikan.comic
-	||f2.kkmh.com^$app=com.kuaikan.comic
-	||fengkongcloud.com^$app=com.kuaikan.comic
-	||gdtimg.com^$app=com.kuaikan.comic
-	||gifshow.com^$app=com.kuaikan.comic
-	||images.gitee.com/uploads/images/2022/0211/*
-	||images.gitee.com/uploads/images/2022/0314/*
-	||images.gitee.com/uploads/images/2022/0322/*
-	||img11.360buyimg.com
-	||img12.360buyimg.com
-	||img14.360buyimg.com
-	||ixigua.com^$app=com.xiaoxiaobook.zuiread
-	||jd.com^$app=com.kuaikan.comic
-	||jpush.cn^$app=com.kuaikan.comic
-	||kuaishou.com^$app=com.kuaikan.comic
-	||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/*
-	||mob.com^$app=com.kuaikan.comic
-	||nd-static.bdstatic.com/m-static/interface-widget-1/wpguide/img/
-	||pangolin-sdk-toutiao.com^$app=com.kuaikan.comic
-	||pangolin-sdk-toutiao.com^$app=com.xiaoxiaobook.zuiread
-	||pangolin-sdk-toutiao-b.com^$app=com.kuaikan.comic
-	||pangolin-sdk-toutiao-b.com^$app=com.xiaoxiaobook.zuiread
-	||pglstatp-toutiao.com^$app=com.kuaikan.comic
-	||pglstatp-toutiao.com^$app=com.xiaoxiaobook.zuiread
-	||qchannel01.cn^$app=com.kuaikan.comic
-	||qq.com^$app=com.kuaikan.comic
-	||shuzilm.cn^$app=com.kuaikan.comic
-	||snssdk.com^$app=com.kuaikan.comic
-	||static.asus.com.cn/store/20220316/*
-	||static.ws.126.net/f2e/www/index2014/images/
-	||ugdtimg.com^$app=com.kuaikan.comic
-	||umeng.com^$app=com.kuaikan.comic
-	||youdao.com^$app=com.kuaikan.comic
-	||yximgs.com^$app=com.kuaikan.comic
-	||yximgs.com^$app=com.xiaoxiaobook.zuiread
-	3g.163.com##div:last-child > div.widget-slider.widget-slider-article.bottom > div.widget-slider-article-content:last-child
-	3g.163.com##div:nth-child(44) > div.widget-slider.widget-slider-article.bottom
-	alibabacloud.com###J_3740376120-31-0-inner > div.hmod-alicloud-bottom-banner > div.BottomBanner.BottomBanner--visible > a.container:last-child > img.BottomBanner--h5-background:last-child
-	baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined:nth-child(5)
-	baike.baidu.com###header_wrapper
-	baike.baidu.com###J-baikeapp-promote-front-8450cc1
-	baike.baidu.com###J-superLayer
-	baike.baidu.com###J-superLayer-close > img.close-image
-	baike.baidu.com###J-superLayer-main > a.no-inlink > img.main-image
-	baike.baidu.com###J-super-layer-promote
-	baike.baidu.com##.new-side-share.new-bdsharebuttonbox
-	baike.baidu.com##a[data-num]
-	baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
-	bilibili.com###app > div.d-f.fd-col.read-app-main > div.d-f-s.h5-download-bar.clearfix:nth-child(3)
-	bing.com###b_context
-	bing.com###b_mtp
-	bing.com###bnp\.nid\.63475
-	bing.com###ev_talkbox_wrapper
-	bing.com###ev_talkbox_wrapper
-	blog.csdn.net##span.feed-Sign-span:nth-child(20)
-	bqgyy.com###nu71t_16400520453047
-	fanyi.baidu.com###footer-products-container
-	fanyi.baidu.com##.new-header-dl
-	fanyi.baidu.com##.new-header-title
-	fanyi.baidu.com##div.container:first-child > div.footer.cleafix:nth-child(7) > div.extra-wrap:first-child > a.sideQrContainer:first-child
-	fanyi.baidu.com##div.container:first-child > div.header:first-child > div.inner > div.download-guide:nth-child(5) > ul.download-guide-ul > li.guide-list.download-app:last-child
-	fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > a.app-bar:nth-child(10)
-	fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > section.bottom-intro:nth-child(41) > div.intro-title:first-child
-	finance.sina.cn##div:last-child > div.fl_feedFous.an
-	gitee.com##.add-readme-tip.message.info.ui
-	gitee.com##.git-project-desc-wrapper
-	gitee.com##.people-image
-	gov.cn##div.apptg:nth-child(31)
-	image.baidu.com###boxBanner
-	juejin.cn###juejin > div.view-container:first-child > div.open-button.app-open-button:last-child
-	juejin.cn##.recommend-box
-	lagou.com##div.course:nth-child(3) > div.push_bottom:last-child > div.push_bottom_table
-	m.7stary.com#?#div:contains(/^\d{5}$/)
-	m.apkpure.com##div.main.page-q:nth-child(4) > div.details:nth-child(3) > div.aegon-warp:last-child
-	m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-content:first-child > div > div.ball-wrapper__1wwgl.ball-hidden__35xzn
-	m.baidu.com###results-pre > div.c-result.result:nth-child(3) > div.c-result-content:first-child > div.mkt-ball-wrapper__2HtOM > div:first-child > a.ball-wrapper__3BTBO.c-blocka.ball-expand__x4D_-
-	m.bilibili.com###app > div.m-head > div.m-home:last-child > div.launch-app-btn.home-float-openapp:last-child
-	m.bilibili.com###app > div.video > div.m-video-new.sticky > div.launch-app-btn.m-video-main-launchapp.visible-open-app-btn:nth-child(3) > div.m-video2-main-img
-	m.biquxsw.com##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
-	m.biquxsw.com##bkveng:nth-child(47) > cgken > syiijo > xtgecr.zw1ljPz
-	m.biquxsw.com##bkveng:nth-child(5) > cgken > syiijo > xtgecr.zw1ljPz
-	m.biquxsw.com##div.show-app2:nth-child(13)
-	m.biquxsw.com##div.show-app2:nth-child(4)
-	m.biquxsw.com##div.show-app2:nth-child(5)
-	m.biquxsw.com##div.show-app2:nth-child(7)
-	m.biquxsw.com##div:first-child > div.show-app2:nth-child(4)
-	m.biquxsw.com##div:first-child > div.show-app2:nth-child(7)
-	m.biquxsw.com##div:nth-child(43) > div.nr_page:nth-child(6) > div:first-child
-	m.biquxsw.com##div:nth-child(43) > div.nr_page:nth-child(6) > div:nth-child(5)
-	m.biquxsw.com##div:nth-child(43) > div.show-app2:nth-child(4)
-	m.biquxsw.com##div:nth-child(43) > div.show-app2:nth-child(7)
-	m.fujianmeishi.cn###Close1 > a:last-child > div > img
-	m.fujianmeishi.cn###Close3 > a:last-child > div > img
-	m.guancha.cn##div.g_header44:first-child > div.g_header.go-to-app
-	m.guancha.cn##div.g_swiper_container:nth-child(16)
-	m.ikmh88.com##div:contains(下方看小说)
-	m.iqiyi.com###app > div:nth-child(2) > div > div > div:last-child > div > div.m-box-items.m-box-items-full:nth-child(2) > section.m-banner-img
-	m.iqiyi.com###app > div:nth-child(2) > div:nth-child(3) > div.m-box:first-child > div:nth-child(2)
-	m.ithome.com##div.page-box:first-child > div.con-box:nth-child(3) > div.footer:last-child > div.footer-box > div.ft
-	m.jiemian.com##section.content:nth-child(4) > div.content-inner > div.content-container > div.download-app:nth-child(6)
-	m.mkzhan.com##div.bottom-tool-bar:nth-child(5) > div.read-bottom-download.hide:first-child
-	m.qiqidongman.com###g-header
-	m.to8to.com###open_wx
-	m.v.qq.com###banner
-	m.v.qq.com###container-channel > div.at-app-banner:last-child > div.at-app-banner__main-btn.at-app-banner--button
-	m.v.qq.com###container-play > div.at-app-banner:last-child > div.at-app-banner__main-btn.at-app-banner--button
-	m.xbiquge.so##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
-	m.xbiquge.so##bkveng:nth-child(4) > cgken > syiijo > xtgecr.zw1ljPz
-	m.xbiquge.so##div.show-app2:nth-child(13)
-	m.xbiquge.so##div.show-app2:nth-child(2)
-	m.xbiquge.so##div.show-app2:nth-child(3)
-	m.xbiquge.so##div.show-app2:nth-child(4)
-	m.xbiquge.so##div.show-app2:nth-child(5)
-	m.xbiquge.so##div.show-app2:nth-child(7)
-	m.xbiquge.so##div:first-child > div.show-app2:nth-child(4)
-	m.xbiquge.so##div:first-child > div.show-app2:nth-child(7)
-	m.youku.com###app > div > div:nth-child(4)
-	m.youku.com###app > div > div:nth-child(7) > div.Corner-container
-	mail.163.com###smartBottomAd
-	mail.google.com##.Ir
-	mob.iyingdi.com###default-container > div.post-detail-container > div.down-load-app-container.fixed:first-child
-	pan.baidu.com##.gOIbzPb
-	pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
-	pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
-	post.m.smzdm.com###__layout > div > div.page-container > div.footer-banner-wrap:nth-child(16)
-	post.m.smzdm.com###__layout > div > div.page-container > div.position-tool:nth-child(17) > a.app-position:last-child > img
-	quark.sm.cn###sc_operating_activity_ball
-	stske.dzypc.cn###form1 > div.young_box.young_con:nth-child(3) > section.young_video:first-child > div.young_play.top_video > div.young_cross:nth-child(6)
-	tieba.baidu.com##div.main-page-wrap:nth-child(3) > div.pb-page-wrapper.app-view.transition-fade > nav.fixed-nav-bar-defensive:last-child > div.w-row.w-row-align-center.w-row-justify-between.nav-bar
-	wap.mail.qq.com###app > div.container.qm_maillist_container:first-child > div.qm_mail_list:last-child > div > div.download_container:last-child
-	wiki.mbalib.com###globalWrapper > div.news-banner-container.download_app:nth-child(4)
-	wiki.mbalib.com###gotop
-	wukong.toutiao.com###body > div.float-openapp:first-child > div.btn
-	wukong.toutiao.com##body > div:contains(/打开$/):first-child
-	www.acfun.cn##.app-guide
-	www.asus.com.cn##.topNotice
-	www.ithome.com##.down_app
-	www.w3cschool.cn###rfbanner
-	www.w3cschool.cn###topbanner
-	xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > a.jsx-1603696139.go-home:nth-child(16)
-	xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > div.jsx-71858563.elevator:nth-child(14)
-	zh.m.wikipedia.org###content > div.banner-container:first-child
-	zh.wikipedia.org###siteNotice
-	zhidao.baidu.com###main-content > div.question-container:first-child > div.doodle-container.show:nth-child(2)
-	zhuanlan.zhihu.com##button:contains(/APP/i)
-	baike.baidu.com##div:contains(/^大家还在搜$/i):first-child
-	baike.baidu.com##div:contains(/^大家还在搜$/i):first-child~div
+||1rtb.com^$app=com.naver.linewebtoon.cn
+||360buyimg.com^$app=com.kuaikan.comic
+||360buyimg.com^$app=com.xiaoxiaobook.zuiread
+||amap.com^$app=com.kuaikan.comic
+||atts.w3cschool.cn/attachments/image/20220222/*
+||atts.w3cschool.cn/attachments/image/20220307/*
+||baidu.com^$app=com.kuaikan.comic
+||baikebcs.bdimg.com/adpic/*
+||bkimg.cdn.bcebos.com/pic/*$image
+||bkssl.bdimg.com/static/wiki-lemma/*
+||cctv.bwv8.com
+||cdn.cnbj1.fds.api.mi-img.com
+||csdnimg.cn/download_wenku/wk_detail_ads/*
+||ctobsnssdk.com^$app=com.kuaikan.comic
+||dmya.lflmdm.com/upload/*
+||dutils.com^$app=com.kuaikan.comic
+||f2.kkmh.com^$app=com.kuaikan.comic
+||fengkongcloud.com^$app=com.kuaikan.comic
+||gdtimg.com^$app=com.kuaikan.comic
+||gifshow.com^$app=com.kuaikan.comic
+||images.gitee.com/uploads/images/2022/0211/*
+||images.gitee.com/uploads/images/2022/0314/*
+||images.gitee.com/uploads/images/2022/0322/*
+||img11.360buyimg.com
+||img12.360buyimg.com
+||img14.360buyimg.com
+||ixigua.com^$app=com.xiaoxiaobook.zuiread
+||jd.com^$app=com.kuaikan.comic
+||jpush.cn^$app=com.kuaikan.comic
+||kuaishou.com^$app=com.kuaikan.comic
+||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/*
+||mob.com^$app=com.kuaikan.comic
+||nd-static.bdstatic.com/m-static/interface-widget-1/wpguide/img/
+||pangolin-sdk-toutiao.com^$app=com.kuaikan.comic
+||pangolin-sdk-toutiao.com^$app=com.xiaoxiaobook.zuiread
+||pangolin-sdk-toutiao-b.com^$app=com.kuaikan.comic
+||pangolin-sdk-toutiao-b.com^$app=com.xiaoxiaobook.zuiread
+||pglstatp-toutiao.com^$app=com.kuaikan.comic
+||pglstatp-toutiao.com^$app=com.xiaoxiaobook.zuiread
+||qchannel01.cn^$app=com.kuaikan.comic
+||qq.com^$app=com.kuaikan.comic
+||shuzilm.cn^$app=com.kuaikan.comic
+||snssdk.com^$app=com.kuaikan.comic
+||static.asus.com.cn/store/20220316/*
+||static.ws.126.net/f2e/www/index2014/images/
+||ugdtimg.com^$app=com.kuaikan.comic
+||umeng.com^$app=com.kuaikan.comic
+||youdao.com^$app=com.kuaikan.comic
+||yximgs.com^$app=com.kuaikan.comic
+||yximgs.com^$app=com.xiaoxiaobook.zuiread
+3g.163.com##div:last-child > div.widget-slider.widget-slider-article.bottom > div.widget-slider-article-content:last-child
+3g.163.com##div:nth-child(44) > div.widget-slider.widget-slider-article.bottom
+alibabacloud.com###J_3740376120-31-0-inner > div.hmod-alicloud-bottom-banner > div.BottomBanner.BottomBanner--visible > a.container:last-child > img.BottomBanner--h5-background:last-child
+baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined:nth-child(5)
+baike.baidu.com###header_wrapper
+baike.baidu.com###J-baikeapp-promote-front-8450cc1
+baike.baidu.com###J-superLayer
+baike.baidu.com###J-superLayer-close > img.close-image
+baike.baidu.com###J-superLayer-main > a.no-inlink > img.main-image
+baike.baidu.com###J-super-layer-promote
+baike.baidu.com##.new-side-share.new-bdsharebuttonbox
+baike.baidu.com##a[data-num]
+baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
+bilibili.com###app > div.d-f.fd-col.read-app-main > div.d-f-s.h5-download-bar.clearfix:nth-child(3)
+bing.com###b_context
+bing.com###b_mtp
+bing.com###bnp\.nid\.63475
+bing.com###ev_talkbox_wrapper
+bing.com###ev_talkbox_wrapper
+blog.csdn.net##span.feed-Sign-span:nth-child(20)
+bqgyy.com###nu71t_16400520453047
+fanyi.baidu.com###footer-products-container
+fanyi.baidu.com##.new-header-dl
+fanyi.baidu.com##.new-header-title
+fanyi.baidu.com##div.container:first-child > div.footer.cleafix:nth-child(7) > div.extra-wrap:first-child > a.sideQrContainer:first-child
+fanyi.baidu.com##div.container:first-child > div.header:first-child > div.inner > div.download-guide:nth-child(5) > ul.download-guide-ul > li.guide-list.download-app:last-child
+fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > a.app-bar:nth-child(10)
+fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > section.bottom-intro:nth-child(41) > div.intro-title:first-child
+finance.sina.cn##div:last-child > div.fl_feedFous.an
+gitee.com##.add-readme-tip.message.info.ui
+gitee.com##.git-project-desc-wrapper
+gitee.com##.people-image
+gov.cn##div.apptg:nth-child(31)
+image.baidu.com###boxBanner
+juejin.cn###juejin > div.view-container:first-child > div.open-button.app-open-button:last-child
+juejin.cn##.recommend-box
+lagou.com##div.course:nth-child(3) > div.push_bottom:last-child > div.push_bottom_table
+m.7stary.com#?#div:contains(/^\d{5}$/)
+m.apkpure.com##div.main.page-q:nth-child(4) > div.details:nth-child(3) > div.aegon-warp:last-child
+m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-content:first-child > div > div.ball-wrapper__1wwgl.ball-hidden__35xzn
+m.baidu.com###results-pre > div.c-result.result:nth-child(3) > div.c-result-content:first-child > div.mkt-ball-wrapper__2HtOM > div:first-child > a.ball-wrapper__3BTBO.c-blocka.ball-expand__x4D_-
+m.bilibili.com###app > div.m-head > div.m-home:last-child > div.launch-app-btn.home-float-openapp:last-child
+m.bilibili.com###app > div.video > div.m-video-new.sticky > div.launch-app-btn.m-video-main-launchapp.visible-open-app-btn:nth-child(3) > div.m-video2-main-img
+m.biquxsw.com##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
+m.biquxsw.com##bkveng:nth-child(47) > cgken > syiijo > xtgecr.zw1ljPz
+m.biquxsw.com##bkveng:nth-child(5) > cgken > syiijo > xtgecr.zw1ljPz
+m.biquxsw.com##div.show-app2:nth-child(13)
+m.biquxsw.com##div.show-app2:nth-child(4)
+m.biquxsw.com##div.show-app2:nth-child(5)
+m.biquxsw.com##div.show-app2:nth-child(7)
+m.biquxsw.com##div:first-child > div.show-app2:nth-child(4)
+m.biquxsw.com##div:first-child > div.show-app2:nth-child(7)
+m.biquxsw.com##div:nth-child(43) > div.nr_page:nth-child(6) > div:first-child
+m.biquxsw.com##div:nth-child(43) > div.nr_page:nth-child(6) > div:nth-child(5)
+m.biquxsw.com##div:nth-child(43) > div.show-app2:nth-child(4)
+m.biquxsw.com##div:nth-child(43) > div.show-app2:nth-child(7)
+m.fujianmeishi.cn###Close1 > a:last-child > div > img
+m.fujianmeishi.cn###Close3 > a:last-child > div > img
+m.guancha.cn##div.g_header44:first-child > div.g_header.go-to-app
+m.guancha.cn##div.g_swiper_container:nth-child(16)
+m.ikmh88.com##div:contains(下方看小说)
+m.iqiyi.com###app > div:nth-child(2) > div > div > div:last-child > div > div.m-box-items.m-box-items-full:nth-child(2) > section.m-banner-img
+m.iqiyi.com###app > div:nth-child(2) > div:nth-child(3) > div.m-box:first-child > div:nth-child(2)
+m.ithome.com##div.page-box:first-child > div.con-box:nth-child(3) > div.footer:last-child > div.footer-box > div.ft
+m.jiemian.com##section.content:nth-child(4) > div.content-inner > div.content-container > div.download-app:nth-child(6)
+m.mkzhan.com##div.bottom-tool-bar:nth-child(5) > div.read-bottom-download.hide:first-child
+m.qiqidongman.com###g-header
+m.to8to.com###open_wx
+m.v.qq.com###banner
+m.v.qq.com###container-channel > div.at-app-banner:last-child > div.at-app-banner__main-btn.at-app-banner--button
+m.v.qq.com###container-play > div.at-app-banner:last-child > div.at-app-banner__main-btn.at-app-banner--button
+m.xbiquge.so##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
+m.xbiquge.so##bkveng:nth-child(4) > cgken > syiijo > xtgecr.zw1ljPz
+m.xbiquge.so##div.show-app2:nth-child(13)
+m.xbiquge.so##div.show-app2:nth-child(2)
+m.xbiquge.so##div.show-app2:nth-child(3)
+m.xbiquge.so##div.show-app2:nth-child(4)
+m.xbiquge.so##div.show-app2:nth-child(5)
+m.xbiquge.so##div.show-app2:nth-child(7)
+m.xbiquge.so##div:first-child > div.show-app2:nth-child(4)
+m.xbiquge.so##div:first-child > div.show-app2:nth-child(7)
+m.youku.com###app > div > div:nth-child(4)
+m.youku.com###app > div > div:nth-child(7) > div.Corner-container
+mail.163.com###smartBottomAd
+mail.google.com##.Ir
+mob.iyingdi.com###default-container > div.post-detail-container > div.down-load-app-container.fixed:first-child
+pan.baidu.com##.gOIbzPb
+pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
+pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
+post.m.smzdm.com###__layout > div > div.page-container > div.footer-banner-wrap:nth-child(16)
+post.m.smzdm.com###__layout > div > div.page-container > div.position-tool:nth-child(17) > a.app-position:last-child > img
+quark.sm.cn###sc_operating_activity_ball
+stske.dzypc.cn###form1 > div.young_box.young_con:nth-child(3) > section.young_video:first-child > div.young_play.top_video > div.young_cross:nth-child(6)
+tieba.baidu.com##div.main-page-wrap:nth-child(3) > div.pb-page-wrapper.app-view.transition-fade > nav.fixed-nav-bar-defensive:last-child > div.w-row.w-row-align-center.w-row-justify-between.nav-bar
+wap.mail.qq.com###app > div.container.qm_maillist_container:first-child > div.qm_mail_list:last-child > div > div.download_container:last-child
+wiki.mbalib.com###globalWrapper > div.news-banner-container.download_app:nth-child(4)
+wiki.mbalib.com###gotop
+wukong.toutiao.com###body > div.float-openapp:first-child > div.btn
+wukong.toutiao.com##body > div:contains(/打开$/):first-child
+www.acfun.cn##.app-guide
+www.asus.com.cn##.topNotice
+www.ithome.com##.down_app
+www.w3cschool.cn###rfbanner
+www.w3cschool.cn###topbanner
+xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > a.jsx-1603696139.go-home:nth-child(16)
+xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > div.jsx-71858563.elevator:nth-child(14)
+zh.m.wikipedia.org###content > div.banner-container:first-child
+zh.wikipedia.org###siteNotice
+zhidao.baidu.com###main-content > div.question-container:first-child > div.doodle-container.show:nth-child(2)
+zhuanlan.zhihu.com##button:contains(/APP/i)
+baike.baidu.com##div:contains(/^大家还在搜$/i):first-child
+baike.baidu.com##div:contains(/^大家还在搜$/i):first-child~div
