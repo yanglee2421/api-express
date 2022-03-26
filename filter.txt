@@ -158,3 +158,5 @@
 	zh.wikipedia.org###siteNotice
 	zhidao.baidu.com###main-content > div.question-container:first-child > div.doodle-container.show:nth-child(2)
 	zhuanlan.zhihu.com##button:contains(/APP/i)
+	baike.baidu.com##div:contains(/^大家还在搜$/i):first-child
+	baike.baidu.com##div:contains(/^大家还在搜$/i):first-child~div
