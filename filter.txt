@@ -157,6 +157,4 @@
 	zh.m.wikipedia.org###content > div.banner-container:first-child
 	zh.wikipedia.org###siteNotice
 	zhidao.baidu.com###main-content > div.question-container:first-child > div.doodle-container.show:nth-child(2)
-	zhihu.com###root > div.App > main.App-main:last-child > div.Question-mainEntity > button.OpenInAppButton.OpenInApp.css-cazai8:last-child
-	zhuanlan.zhihu.com###root > div.App > main.App-main:last-child > div.Post-content.Post-content-mobile > div.Post-Sub.Post-Sub-Mobile:last-child > button.OpenInAppButton.css-cazai8
-	zhuanlan.zhihu.com##.css-cazai8.OpenInAppButton
+	zhuanlan.zhihu.com##button:contains(/APP/i)
