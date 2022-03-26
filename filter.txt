@@ -6,6 +6,7 @@
 	||atts.w3cschool.cn/attachments/image/20220307/*
 	||baidu.com^$app=com.kuaikan.comic
 	||baikebcs.bdimg.com/adpic/*
+	||bkimg.cdn.bcebos.com/pic/*
 	||bkssl.bdimg.com/static/wiki-lemma/*
 	||cctv.bwv8.com
 	||cdn.cnbj1.fds.api.mi-img.com
