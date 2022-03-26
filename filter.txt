@@ -76,41 +76,27 @@ fanyi.baidu.com##div.container:first-child > div.footer.cleafix:nth-child(7) > d
 fanyi.baidu.com##div.container:first-child > div.header:first-child > div.inner > div.download-guide:nth-child(5) > ul.download-guide-ul > li.guide-list.download-app:last-child
 fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > a.app-bar:nth-child(10)
 fanyi.baidu.com##div.fanyi-sfr-container.with-middle-app-bar:nth-child(2) > section.bottom-intro:nth-child(41) > div.intro-title:first-child
-finance.sina.cn##div:last-child > div.fl_feedFous.an
+finance.sina.cn##div.fl_feedFous.an
 gitee.com##.add-readme-tip.message.info.ui
 gitee.com##.git-project-desc-wrapper
 gitee.com##.people-image
-gov.cn##div.apptg:nth-child(31)
+gov.cn##div.apptg
 image.baidu.com###boxBanner
-juejin.cn###juejin > div.view-container:first-child > div.open-button.app-open-button:last-child
+juejin.cn##div.open-button.app-open-button
 juejin.cn##.recommend-box
-lagou.com##div.course:nth-child(3) > div.push_bottom:last-child > div.push_bottom_table
+lagou.com##div.push_bottom_table
 m.7stary.com#?#div:contains(/^\d{5}$/)
-m.apkpure.com##div.main.page-q:nth-child(4) > div.details:nth-child(3) > div.aegon-warp:last-child
+m.apkpure.com##div.aegon-warp
 m.baidu.com###results-pre > div.c-result.result:nth-child(2) > div.c-result-content:first-child > div > div.ball-wrapper__1wwgl.ball-hidden__35xzn
-m.baidu.com###results-pre > div.c-result.result:nth-child(3) > div.c-result-content:first-child > div.mkt-ball-wrapper__2HtOM > div:first-child > a.ball-wrapper__3BTBO.c-blocka.ball-expand__x4D_-
-m.bilibili.com###app > div.m-head > div.m-home:last-child > div.launch-app-btn.home-float-openapp:last-child
 m.bilibili.com###app > div.video > div.m-video-new.sticky > div.launch-app-btn.m-video-main-launchapp.visible-open-app-btn:nth-child(3) > div.m-video2-main-img
-m.biquxsw.com##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
-m.biquxsw.com##bkveng:nth-child(47) > cgken > syiijo > xtgecr.zw1ljPz
-m.biquxsw.com##bkveng:nth-child(5) > cgken > syiijo > xtgecr.zw1ljPz
-m.biquxsw.com##div.show-app2:nth-child(13)
-m.biquxsw.com##div.show-app2:nth-child(4)
-m.biquxsw.com##div.show-app2:nth-child(5)
-m.biquxsw.com##div.show-app2:nth-child(7)
-m.biquxsw.com##div:first-child > div.show-app2:nth-child(4)
-m.biquxsw.com##div:first-child > div.show-app2:nth-child(7)
-m.biquxsw.com##div:nth-child(43) > div.nr_page:nth-child(6) > div:first-child
-m.biquxsw.com##div:nth-child(43) > div.nr_page:nth-child(6) > div:nth-child(5)
-m.biquxsw.com##div:nth-child(43) > div.show-app2:nth-child(4)
-m.biquxsw.com##div:nth-child(43) > div.show-app2:nth-child(7)
-m.fujianmeishi.cn###Close1 > a:last-child > div > img
-m.fujianmeishi.cn###Close3 > a:last-child > div > img
+m.biquxsw.com##bkveng > cgken > syiijo > xtgecr.zw1ljPz
+m.biquxsw.com##div > div.show-app2
+m.fujianmeishi.cn###Close1 > a > div > img
+m.fujianmeishi.cn###Close3 > a > div > img
 m.guancha.cn##div.g_header44:first-child > div.g_header.go-to-app
-m.guancha.cn##div.g_swiper_container:nth-child(16)
-m.ikmh88.com##div:contains(下方看小说)
-m.iqiyi.com###app > div:nth-child(2) > div > div > div:last-child > div > div.m-box-items.m-box-items-full:nth-child(2) > section.m-banner-img
-m.iqiyi.com###app > div:nth-child(2) > div:nth-child(3) > div.m-box:first-child > div:nth-child(2)
+m.guancha.cn##div.g_swiper_container
+m.ikmh88.com##div:contains(\下方看小说\)
+m.iqiyi.com###app > div > div > div > div > div > div.m-box-items.m-box-items-full > section.m-banner-img
 m.ithome.com##div.page-box:first-child > div.con-box:nth-child(3) > div.footer:last-child > div.footer-box > div.ft
 m.jiemian.com##section.content:nth-child(4) > div.content-inner > div.content-container > div.download-app:nth-child(6)
 m.mkzhan.com##div.bottom-tool-bar:nth-child(5) > div.read-bottom-download.hide:first-child
@@ -120,15 +106,7 @@ m.v.qq.com###banner
 m.v.qq.com###container-channel > div.at-app-banner:last-child > div.at-app-banner__main-btn.at-app-banner--button
 m.v.qq.com###container-play > div.at-app-banner:last-child > div.at-app-banner__main-btn.at-app-banner--button
 m.xbiquge.so##bkveng:last-child > cgken > syiijo > xtgecr.zw1ljPz
-m.xbiquge.so##bkveng:nth-child(4) > cgken > syiijo > xtgecr.zw1ljPz
-m.xbiquge.so##div.show-app2:nth-child(13)
-m.xbiquge.so##div.show-app2:nth-child(2)
-m.xbiquge.so##div.show-app2:nth-child(3)
-m.xbiquge.so##div.show-app2:nth-child(4)
-m.xbiquge.so##div.show-app2:nth-child(5)
-m.xbiquge.so##div.show-app2:nth-child(7)
-m.xbiquge.so##div:first-child > div.show-app2:nth-child(4)
-m.xbiquge.so##div:first-child > div.show-app2:nth-child(7)
+m.xbiquge.so##div.show-app2
 m.youku.com###app > div > div:nth-child(4)
 m.youku.com###app > div > div:nth-child(7) > div.Corner-container
 mail.163.com###smartBottomAd
@@ -153,7 +131,6 @@ www.ithome.com##.down_app
 www.w3cschool.cn###rfbanner
 www.w3cschool.cn###topbanner
 xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > a.jsx-1603696139.go-home:nth-child(16)
-xw.qq.com###__xw_next_view_root > div.jsx-2375966888 > div.jsx-71858563.elevator:nth-child(14)
 zh.m.wikipedia.org###content > div.banner-container:first-child
 zh.wikipedia.org###siteNotice
 zhidao.baidu.com###main-content > div.question-container:first-child > div.doodle-container.show:nth-child(2)
