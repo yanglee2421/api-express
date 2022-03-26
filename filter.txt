@@ -48,10 +48,9 @@
 ||youdao.com^$app=com.kuaikan.comic
 ||yximgs.com^$app=com.kuaikan.comic
 ||yximgs.com^$app=com.xiaoxiaobook.zuiread
-3g.163.com##div:last-child > div.widget-slider.widget-slider-article.bottom > div.widget-slider-article-content:last-child
-3g.163.com##div:nth-child(44) > div.widget-slider.widget-slider-article.bottom
+3g.163.com##div > div.widget-slider.widget-slider-article.bottom
 alibabacloud.com###J_3740376120-31-0-inner > div.hmod-alicloud-bottom-banner > div.BottomBanner.BottomBanner--visible > a.container:last-child > img.BottomBanner--h5-background:last-child
-baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined:nth-child(5)
+baijiahao.baidu.com###page_wrapper > div.other > div.uukjsi6a_zpZccrqYiI3k._3RmxTKlPzuCkzYl1ZqE2yE.undefined
 baike.baidu.com###header_wrapper
 baike.baidu.com###J-baikeapp-promote-front-8450cc1
 baike.baidu.com###J-superLayer

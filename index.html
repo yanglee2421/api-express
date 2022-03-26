@@ -1,182 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title></title>
-	<style type="text/css">
-		.starArea {
-			width: 100vw;
-			height: 100vh;
-			position: fixed;
-			background-image: linear-gradient(to bottom, #1b2947, #2b3152, #3b385d, #4c4067, #5d4771);
-			z-index: -1;
-		}
-
-		.moon {
-			position: absolute;
-			top: 20px;
-			right: 40px;
-			width: 60px;
-			height: 60px;
-			background-color: #ffeaa7;
-			border-radius: 50%;
-			box-shadow: 0 0 20px #ffeaa7;
-		}
-
-		.star {
-			position: absolute;
-			width: 0;
-			height: 0;
-			opacity: 0.2;
-			border: 2px solid transparent;
-			border-bottom: 4px solid #fff;
-			animation: blingbling 3s linear infinite;
-		}
-
-		.star::before {
-			content: "";
-			position: absolute;
-			top: 4px;
-			left: -2px;
-			border: 2px solid transparent;
-			border-top: 4px solid #fff;
-		}
-
-		@keyframes blingbling {
-			20% {
-				opacity: 0.2;
-			}
-
-			40% {
-				opacity: 0.5;
-			}
-
-			60% {
-				opacity: 1;
-			}
-
-			80% {
-				opacity: 0.5;
-			}
-
-			100% {
-				opacity: 0.2;
-			}
-		}
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			background-color: #1a1c1d;
-			/* background-image: url(./img/1643632891547.jpg); */
-			background-position: top center;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-
-		.main {
-			width: 400px;
-			height: 300px;
-			position: relative;
-			margin: 400px auto;
-			/* color: white; */
-			transform-style: preserve-3d;
-			perspective: 1000px;
-		}
-
-		.outside,
-		.inside {
-			width: 100%;
-			height: 100%;
-			background-position: center;
-			background-size: cover;
-			border-radius: 20px;
-			position: absolute;
-			transition: 0.7s ease-in-out;
-			transform-style: preserve-3d;
-			perspective: 1000px;
-			backface-visibility: hidden;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.outside {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/1643635255405.jpg);
-			transform: rotateY(0deg);
-		}
-
-		.inside {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/1643635255388.jpg);
-			transform: rotateY(-180deg);
-		}
-
-		.side {
-			transform: translateZ(160px);
-			backface-visibility: hidden;
-		}
-
-		#switch:checked~.main .outside {
-			transform: rotateY(180deg);
-		}
-
-		#switch:checked~.main .inside {
-			transform: rotateY(0deg);
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>测试选择器的页面</title>
 </head>
 
 <body>
-	<div class="starArea">
-		<div class="moon"></div>
+	<div class="outside">
+		<div class="inside">子节点中的文本</div>
+		<div class="ins2">子节点2中的文本</div>
 	</div>
-	</div>
-	<script type="text/javascript">
-		function starInit(starCount) {
-			const starArea = document.querySelector(".starArea");
-			for (let i = 0; i < starCount; i++) {
-				const star = document.createElement("div");
-				star.classList.add("star");
-				starArea.appendChild(star);
-			}
-		}
-		// starInit();
-		function starPosition(starCount) {
-			starInit(starCount);
-			const stars = document.querySelectorAll(".star");
-			//console.log(stars);
-			for (let i = 0; i < starCount; i++) {
-				let left = Math.floor(Math.random() * window.innerWidth);
-				let top = Math.floor(Math.random() * window.innerHeight / 1.5);
-				stars[i].style.left = left + 'px';
-				stars[i].style.top = top + 'px';
-				stars[i].style.animationDelay = Math.floor(Math.random().toFixed(1) * i) + 's';
-			}
-		}
-		starPosition(100);
-	</script>
-	<label>
-		<input style="visibility: hidden;" type="checkbox" name="" id="switch" value="" />
-		<div class="main">
-			<div class="outside">
-				<div class="side">
-					<h2>愿新年，胜旧年。</h2>
-					<span>有趣有盼，无灾无难。</span>
-				</div>
-			</div>
-			<div class="inside">
-				<div class="side">
-					<h2>盼来年</h2>
-					<span>万事顺遂， 毫无蹉跎，平安喜乐。</span>
-				</div>
-			</div>
-		</div>
-	</label>
 </body>
+<script>
+	const out = document.querySelector('.outside')
+	const ins = document.querySelector('.inside')
+</script>
 
 </html>
