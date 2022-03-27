@@ -1,6 +1,7 @@
 ## 订阅地址：
 https://gitee.com/Swz082421/adguard/raw/master/filter.txt
 ***
+- 本规则的元素屏蔽主要使用`:contains()`伪类，移动端的AdGuard（非浏览器插件）对`:contains()`伪类的支持似乎存在问题，建议还是使用kiwi浏览器或Firefox移动版配合AdGuard插件使用
 ## 从代码仓库下载单个文件的URL
 
 github中：
@@ -22,12 +23,12 @@ gitee.com中：
   - 拦截该路径下的所有单个文件,
   - 但不拦其子文件夹下的单个文件
 ---
-- `^` 表示 / 或者 :  
-也用来分隔域名结尾和$  
+- `^` 表示 `/` 或者 `:`  
+也用来分隔域名结尾和`$`  
 例如
-||example.com^$image
+`||example.com^$image`
 ___
-- $   =>  内容修饰符  
+- `$` 表示 内容修饰符  
 例如：
   - $image  =>  拦截图片
   - $~image =>  除了图片都拦截
@@ -43,5 +44,5 @@ ___
 
 配匹`innerText`中含有指定内容的元素，建议配上子元素选择器和正则一起用
 ~~~css
-div > div:contains(\\)
+div > div:contains(/要配匹的字符/)
 ~~~
