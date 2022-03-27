@@ -7,7 +7,7 @@
 ||yximgs.com^$app=com.xiaoxiaobook.zuiread
 !======================================================================咚漫
 ||1rtb.com^$app=com.naver.linewebtoon.cn
-!===================================================================快看
+!================================================================快看
 ||pglstatp-toutiao.com^$app=com.kuaikan.comic
 ||qchannel01.cn^$app=com.kuaikan.comic
 ||qq.com^$app=com.kuaikan.comic
@@ -32,7 +32,7 @@
 ||pangolin-sdk-toutiao.com^$app=com.kuaikan.comic
 ||jpush.cn^$app=com.kuaikan.comic
 ||jd.com^$app=com.kuaikan.comic
-!======================================================================================知乎
+!=================================================================================知乎
 zhihu.com##button:contains(/APP/i)
 zhihu.com##div:contains(/^下载知乎客户端/i)
 zhihu.com##a:contains(/^打开app$/i)
@@ -52,9 +52,14 @@ baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
 gitee.com##.add-readme-tip.message.info.ui
 gitee.com##.git-project-desc-wrapper
 gitee.com##.people-image
-!===================================================================漫画
-m.ikmh88.com##div:contains(\下方看小说\)
+!===============================================================漫画
+m.ikmh88.com##div:contains(/下方看小说/)
 m.7stary.com#?#div:contains(/^\d{5}$/)
+!======================================================================QQ邮箱
+mail.qq.com##a:contains(/^下载QQ邮箱手机客户端/)
+!====================================================================================中文维基百科
+zh.m.wikipedia.org##tr:contains(/^维基百科爱好者交流群/)
+zh.m.wikipedia.org##tr:contains(/^中文维基百科Facebook粉丝专页正式上线，邀请大家一同关注。/)
 
 
 
