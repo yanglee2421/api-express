@@ -46,9 +46,6 @@
 ||yximgs.com^$app=com.kuaikan.comic
 ||yximgs.com^$app=com.xiaoxiaobook.zuiread
 baike.baidu.com###header_wrapper
-baike.baidu.com##ul:contains(/^HOT/i)
-baike.baidu.com##a[data-num]
-baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
 bing.com###b_context
 bing.com###b_mtp
 bing.com###bnp\.nid\.63475
@@ -89,3 +86,6 @@ baike.baidu.com##div:contains(/^大家还在搜$/i)~div
 baike.baidu.com###J-bds_task
 ||bkssl.bdimg.com/static/wiki-lemma/widget/tools/newSideShare/img/
 baike.baidu.com##a:contains(/^下载百科APP$/i)
+baike.baidu.com##ul:contains(/^HOT/i)
+baike.baidu.com##a[data-num]
+baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
