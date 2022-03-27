@@ -34,6 +34,8 @@
 ||jd.com^$app=com.kuaikan.comic
 !======================================================================================知乎
 zhihu.com##button:contains(/APP/i)
+zhihu.com##div:contains(/^下载知乎客户端/i)
+zhihu.com##a:contains(/^打开app$/i)
 !========================================================================================百度百科
 ||bkssl.bdimg.com/static/wiki-lemma/widget/tools/newSideShare/img/
 baike.baidu.com##div:contains(/^大家还在搜$/i)
