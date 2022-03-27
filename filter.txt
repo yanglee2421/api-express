@@ -33,7 +33,7 @@
 ||jpush.cn^$app=com.kuaikan.comic
 ||jd.com^$app=com.kuaikan.comic
 !======================================================================================知乎
-zhuanlan.zhihu.com##button:contains(/APP/i)
+zhihu.com##button:contains(/APP/i)
 !========================================================================================百度百科
 ||bkssl.bdimg.com/static/wiki-lemma/widget/tools/newSideShare/img/
 baike.baidu.com##div:contains(/^大家还在搜$/i)
