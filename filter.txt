@@ -2,25 +2,25 @@
 ||360buyimg.com^$app=com.kuaikan.comic
 ||360buyimg.com^$app=com.xiaoxiaobook.zuiread
 ||amap.com^$app=com.kuaikan.comic
-||atts.w3cschool.cn/attachments/image/20220222/*
-||atts.w3cschool.cn/attachments/image/20220307/*
+||atts.w3cschool.cn/attachments/image/20220222/
+||atts.w3cschool.cn/attachments/image/20220307/
 ||baidu.com^$app=com.kuaikan.comic
-||baikebcs.bdimg.com/adpic/
+||baikebcs.bdimg.com/adpic/Talent/jpzt/MBTI/
 ||bkimg.cdn.bcebos.com/pic/
-||bkssl.bdimg.com/static/wiki-lemma/*
+||bkssl.bdimg.com/static/wiki-lemma/
 ||cctv.bwv8.com
 ||cdn.cnbj1.fds.api.mi-img.com
-||csdnimg.cn/download_wenku/wk_detail_ads/*
+||csdnimg.cn/download_wenku/wk_detail_ads/
 ||ctobsnssdk.com^$app=com.kuaikan.comic
-||dmya.lflmdm.com/upload/*
+||dmya.lflmdm.com/upload/
 ||dutils.com^$app=com.kuaikan.comic
 ||f2.kkmh.com^$app=com.kuaikan.comic
 ||fengkongcloud.com^$app=com.kuaikan.comic
 ||gdtimg.com^$app=com.kuaikan.comic
 ||gifshow.com^$app=com.kuaikan.comic
-||images.gitee.com/uploads/images/2022/0211/*
-||images.gitee.com/uploads/images/2022/0314/*
-||images.gitee.com/uploads/images/2022/0322/*
+||images.gitee.com/uploads/images/2022/0211/
+||images.gitee.com/uploads/images/2022/0314/
+||images.gitee.com/uploads/images/2022/0322/
 ||img11.360buyimg.com
 ||img12.360buyimg.com
 ||img14.360buyimg.com
@@ -28,7 +28,7 @@
 ||jd.com^$app=com.kuaikan.comic
 ||jpush.cn^$app=com.kuaikan.comic
 ||kuaishou.com^$app=com.kuaikan.comic
-||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/*
+||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/
 ||mob.com^$app=com.kuaikan.comic
 ||nd-static.bdstatic.com/m-static/interface-widget-1/wpguide/img/
 ||pangolin-sdk-toutiao.com^$app=com.kuaikan.comic
@@ -41,7 +41,7 @@
 ||qq.com^$app=com.kuaikan.comic
 ||shuzilm.cn^$app=com.kuaikan.comic
 ||snssdk.com^$app=com.kuaikan.comic
-||static.asus.com.cn/store/20220316/*
+||static.asus.com.cn/store/20220316/
 ||static.ws.126.net/f2e/www/index2014/images/
 ||ugdtimg.com^$app=com.kuaikan.comic
 ||umeng.com^$app=com.kuaikan.comic
@@ -58,6 +58,7 @@ baike.baidu.com###J-superLayer-close > img.close-image
 baike.baidu.com###J-superLayer-main > a.no-inlink > img.main-image
 baike.baidu.com###J-super-layer-promote
 baike.baidu.com##.new-side-share.new-bdsharebuttonbox
+baike.baidu.com##ul:contains(/^HOT/i)
 baike.baidu.com##a[data-num]
 baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
 bilibili.com###app > div.d-f.fd-col.read-app-main > div.d-f-s.h5-download-bar.clearfix:nth-child(3)
