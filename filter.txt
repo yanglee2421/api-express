@@ -92,3 +92,6 @@ zh.wikipedia.org###siteNotice
 zhuanlan.zhihu.com##button:contains(/APP/i)
 baike.baidu.com##div:contains(/^大家还在搜$/i):first-child
 baike.baidu.com##div:contains(/^大家还在搜$/i):first-child~div
+baike.baidu.com###J-bds_task
+||bkssl.bdimg.com/static/wiki-lemma/widget/tools/newSideShare/img/
+baike.baidu.com##a:contains(/^下载百科APP$/i)
