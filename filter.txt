@@ -46,25 +46,29 @@ baike.baidu.com##ul:contains(/^HOT/i)
 baike.baidu.com##a[data-num]
 baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
 !=========================================================================gitee
-||images.gitee.com/uploads/images/2022/0211/
-||images.gitee.com/uploads/images/2022/0314/
-||images.gitee.com/uploads/images/2022/0322/
 gitee.com##.add-readme-tip.message.info.ui
 gitee.com##.git-project-desc-wrapper
-gitee.com##.people-image
+gitee.com##img.people-image
 !===============================================================漫画
 m.ikmh88.com##div:contains(/下方看小说/)
 m.7stary.com#?#div:contains(/^\d{5}$/)
 !======================================================================QQ邮箱
+mail.qq.com##div#todayTool
 mail.qq.com##a:contains(/^下载QQ邮箱手机客户端/)
+mail.qq.com##div:contains(/^推荐使用QQ邮箱英文帐号/)
 !====================================================================================中文维基百科
 zh.m.wikipedia.org##tr:contains(/^维基百科爱好者交流群/)
 zh.m.wikipedia.org##tr:contains(/^中文维基百科Facebook粉丝专页正式上线，邀请大家一同关注。/)
-
-
-
+!=========================================================w3cschool
 ||atts.w3cschool.cn/attachments/image/20220222/
 ||atts.w3cschool.cn/attachments/image/20220307/
+www.w3cschool.cn###topbanner
+www.w3cschool.cn###rfbanner
+!================================================================pixiv
+pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
+
+
+
 ||cctv.bwv8.com
 ||cdn.cnbj1.fds.api.mi-img.com
 ||csdnimg.cn/download_wenku/wk_detail_ads/
@@ -76,6 +80,3 @@ zh.m.wikipedia.org##tr:contains(/^中文维基百科Facebook粉丝专页正式�
 ||nd-static.bdstatic.com/m-static/interface-widget-1/wpguide/img/
 ||static.asus.com.cn/store/20220316/
 ||static.ws.126.net/f2e/www/index2014/images/
-pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
-www.w3cschool.cn###rfbanner
-www.w3cschool.cn###topbanner
