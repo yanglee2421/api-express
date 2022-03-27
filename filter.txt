@@ -46,12 +46,6 @@
 ||yximgs.com^$app=com.kuaikan.comic
 ||yximgs.com^$app=com.xiaoxiaobook.zuiread
 baike.baidu.com###header_wrapper
-baike.baidu.com###J-baikeapp-promote-front-8450cc1
-baike.baidu.com###J-superLayer
-baike.baidu.com###J-superLayer-close > img.close-image
-baike.baidu.com###J-superLayer-main > a.no-inlink > img.main-image
-baike.baidu.com###J-super-layer-promote
-baike.baidu.com##.new-side-share.new-bdsharebuttonbox
 baike.baidu.com##ul:contains(/^HOT/i)
 baike.baidu.com##a[data-num]
 baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
@@ -81,7 +75,7 @@ tieba.baidu.com##div.main-page-wrap:nth-child(3) > div.pb-page-wrapper.app-view.
 wap.mail.qq.com###app > div.container.qm_maillist_container:first-child > div.qm_mail_list:last-child > div > div.download_container:last-child
 wiki.mbalib.com###globalWrapper > div.news-banner-container.download_app:nth-child(4)
 wiki.mbalib.com###gotop
-wukong.toutiao.com##body > div:contains(/打开$/):first-child
+wukong.toutiao.com##body > div:contains(/打开$/)
 www.acfun.cn##.app-guide
 www.asus.com.cn##.topNotice
 www.ithome.com##.down_app
@@ -90,8 +84,8 @@ www.w3cschool.cn###topbanner
 zh.m.wikipedia.org###content > div.banner-container:first-child
 zh.wikipedia.org###siteNotice
 zhuanlan.zhihu.com##button:contains(/APP/i)
-baike.baidu.com##div:contains(/^大家还在搜$/i):first-child
-baike.baidu.com##div:contains(/^大家还在搜$/i):first-child~div
+baike.baidu.com##div:contains(/^大家还在搜$/i)
+baike.baidu.com##div:contains(/^大家还在搜$/i)~div
 baike.baidu.com###J-bds_task
 ||bkssl.bdimg.com/static/wiki-lemma/widget/tools/newSideShare/img/
 baike.baidu.com##a:contains(/^下载百科APP$/i)
