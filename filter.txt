@@ -66,6 +66,10 @@ www.w3cschool.cn###topbanner
 www.w3cschool.cn###rfbanner
 !================================================================pixiv
 pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
+!=============================================================================CSDN
+blog.csdn.net###asideHotArticle
+blog.csdn.net###asideNewNps
+blog.csdn.net###asideArchive
 
 
 
