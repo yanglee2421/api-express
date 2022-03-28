@@ -70,6 +70,7 @@ pixiv.net###spa-contents div.premium-lead-new-t-info-home-top
 blog.csdn.net###asideHotArticle
 blog.csdn.net###asideNewNps
 blog.csdn.net###asideArchive
+blog.csdn.net##.QRcode
 !==============================================百度翻译
 ||fanyiapp.cdn.bcebos.com/cms/image/
 ||fanyi-cdn.cdn.bcebos.com/static/translation/widget/footer/extra/img/
@@ -79,6 +80,7 @@ fanyi.baidu.com##.vip-btn
 !============================================================Bing
 bing.com###ev_talkbox_min
 bing.com##aside[aria-label="更多结果"]
+bing.com##.ev_talkbox_wrapper
 !==========================================百度网盘
 pan.baidu.com##.web-header-ad-item
 pan.baidu.com##div.wp-disk-header__right>div:contains(/认证送50G空间/i)
