@@ -88,6 +88,7 @@ bing.com##.ev_talkbox_wrapper
 pan.baidu.com##.web-header-ad-item
 pan.baidu.com##div.wp-disk-header__right>div:contains(/认证送50G空间/i)
 pan.baidu.com##a:contains(/^客户端下载/)
+pan.baidu.com##.u-svip-button--mini
 !===================================================掘金
 ||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/
 juejin.cn##.recommend-box
