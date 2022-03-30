@@ -46,6 +46,7 @@ baike.baidu.com##ul:contains(/^HOT/i)
 baike.baidu.com##a[data-num]
 baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
 !=========================================================================gitee
+||images.gitee.com/uploads/images/2022/
 gitee.com##.add-readme-tip.message.info.ui
 gitee.com##.git-project-desc-wrapper
 gitee.com##img.people-image
