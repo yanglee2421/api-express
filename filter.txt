@@ -74,9 +74,11 @@ blog.csdn.net##.QRcode
 !==============================================百度翻译
 ||fanyiapp.cdn.bcebos.com/cms/image/
 ||fanyi-cdn.cdn.bcebos.com/static/translation/widget/footer/extra/img/
+||fanyi-cdn.cdn.bcebos.com/static/translation/widget/translate/details/appRead/img/
 fanyi.baidu.com##.products-list
 fanyi.baidu.com##.nav-dxy-logo
 fanyi.baidu.com##.vip-btn
+fanyi.baidu.com###app-read
 !============================================================Bing
 bing.com###ev_talkbox_min
 bing.com##aside[aria-label="更多结果"]
