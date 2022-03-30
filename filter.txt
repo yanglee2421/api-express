@@ -88,6 +88,7 @@ pan.baidu.com##a:contains(/^客户端下载/)
 !===================================================掘金
 ||lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/
 juejin.cn##.recommend-box
+juejin.cn##.shadow.app-download-sidebar-block.sidebar-block
 
 
 
