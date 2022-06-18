@@ -5,6 +5,10 @@
 ||ixigua.com^$app=com.xiaoxiaobook.zuiread
 ||360buyimg.com^$app=com.xiaoxiaobook.zuiread
 ||yximgs.com^$app=com.xiaoxiaobook.zuiread
+||bytedance.com^$app=com.xiaoxiaobook.zuiread
+||gdtimg.com^$third-party,app=com.xiaoxiaobook.zuiread
+||[2409:8c4c:c00:40::35]:443^$app=com.xiaoxiaobook.zuiread
+||ugdtimg.com^$app=com.xiaoxiaobook.zuiread
 !======================================================================咚漫
 ||1rtb.com^$app=com.naver.linewebtoon.cn
 !================================================================快看
