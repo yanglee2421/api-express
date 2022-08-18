@@ -3,7 +3,7 @@ const server = express()
 const fs = require('fs')
 // 监听端口
 server.listen(1818, err => {
-    err || console.log("服务器启动成功")
+    err || console.log("stand by")
 })
 // 部署网页
 server.use(express.static(__dirname + "/dist"))
@@ -22,15 +22,21 @@ server.all('*', (req, res, next) => {
     next()
 })
 // get请求
-server.get("/get", (req, res) => {
-    res.send({
-        name: "张三"
-    })
-})
-// AdGuard广告规则
 server.get("/AdGuard", (req, res) => {
     res.setHeader("Content-Type", "text/plain;charset=utf-8");
     fs.readFile("./AdRules.txt", "utf-8", (err, file) => {
         res.send(file)
+        console.log(req.query)
+    })
+})
+// post请求
+server.use(express.json())//处理post请求
+server.use(express.urlencoded())//处理post表单
+server.post("/pic/:id", (req, res) => {
+    res.setHeader("Content-Type", "image/jpeg")
+    fs.readFile("./dist/assets/1.07b89d99.jpg", (err, file) => {
+        res.send(file)
+        console.log(req.params)
+        console.log(req.body)
     })
 })
