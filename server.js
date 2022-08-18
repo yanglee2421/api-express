@@ -29,10 +29,14 @@ server.get("/AdGuard", (req, res) => {
         console.log(req.query)
     })
 })
-// post请求
-server.use(express.json())//处理post请求
-server.use(express.urlencoded())//处理post表单
-server.post("/pic/:id", (req, res) => {
+/**
+ * post
+ * 处理请求
+ * 处理表单
+ */
+server.use(express.json())
+server.use(express.urlencoded({ extended: false }))
+server.post("/pic/:params", (req, res) => {
     res.setHeader("Content-Type", "image/jpeg")
     fs.readFile("./dist/assets/1.07b89d99.jpg", (err, file) => {
         res.send(file)
