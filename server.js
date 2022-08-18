@@ -15,7 +15,7 @@ server.get("/get", (req, res) => {
 })
 // AdGuard广告规则
 server.get("/AdGuard", (req, res) => {
-    fs.readFile("./filter.txt", 'utf8', (err, file) => {
+    fs.readFile("./AdRules.txt", 'utf8', (err, file) => {
         res.send(file)
     })
 })
