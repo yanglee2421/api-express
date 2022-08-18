@@ -15,7 +15,9 @@ server.get("/get", (req, res) => {
 })
 // AdGuard广告规则
 server.get("/AdGuard", (req, res) => {
-    fs.readFile("./AdRules.txt", 'utf8', (err, file) => {
+    fs.readFile("./AdRules.txt", "utf-8", (err, file) => {
+        console.log(req)
+        res.setHeader('Access-Control-Allow-Origin', '*')
         res.send(file)
     })
 })
