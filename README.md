@@ -1,5 +1,5 @@
 ## 订阅地址：
-https://raw.githubusercontent.com/Swz0321/AdGuard/master/filter.txt
+https://raw.githubusercontent.com/Swz0321/AdGuard/master/AdRules.txt
 
 ***
 - 本规则的元素屏蔽主要使用`:contains()`伪类，移动端的AdGuard（非浏览器插件）对`:contains()`伪类的支持似乎存在问题，建议还是使用kiwi浏览器或Firefox移动版配合AdGuard插件使用
