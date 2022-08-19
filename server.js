@@ -5,7 +5,7 @@ const fs = require('fs')
 server.listen(1818, err => {
     err || console.log("stand by")
 })
-// 部署网页
+// 部署静态文件
 server.use(express.static(__dirname + "/dist"))
 // 设置全局响应头
 server.all('*', (req, res, next) => {
