@@ -1,6 +1,5 @@
 const express = require("express");
 const server = express()
-const fs = require('fs')
 // 监听端口
 server.listen(1818, err => {
     err || console.log("stand by")
@@ -24,10 +23,8 @@ server.all('*', (req, res, next) => {
 // get请求
 server.get("/AdGuard", (req, res) => {
     res.setHeader("Content-Type", "text/plain;charset=utf-8");
-    fs.readFile("./AdRules.txt", "utf-8", (err, file) => {
-        res.send(file)
-        console.log(req.query)
-    })
+    res.sendFile(__dirname + "/AdRules.txt")
+    console.log(req.query)
 })
 /**
  * post
@@ -38,9 +35,7 @@ server.use(express.json())
 server.use(express.urlencoded({ extended: false }))
 server.post("/pic/:params", (req, res) => {
     res.setHeader("Content-Type", "image/jpeg")
-    fs.readFile("./dist/assets/1.07b89d99.jpg", (err, file) => {
-        res.send(file)
-        console.log(req.params)
-        console.log(req.body)
-    })
+    res.sendFile(__dirname + "/dist/assets/1.07b89d99.jpg")
+    console.log(req.params)
+    console.log(req.body)
 })
