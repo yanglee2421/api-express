@@ -74,5 +74,12 @@ bing.com###ev_talkbox_min
 !=======================================全局
 *.com##a:contains(/app/i)
 *.com##button:contains(/app/i)
+*.com##span:contains(/app/i)
 *.cn##a:contains(/app/i)
 *.cn##button:contains(/app/i)
+*.cn##span:contains(/app/i)
+!==================================================哔哩哔哩
+m.bilibili.com##.launch-app-btn.m-nav-openapp
+m.bilibili.com##.launch-app-btn.home-float-openapp
+m.bilibili.com##.launch-app-btn.story-video-main-launchapp
+m.bilibili.com##.launch-app-btn.m-nav-openapp
