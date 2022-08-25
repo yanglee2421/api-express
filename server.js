@@ -33,9 +33,9 @@ server.get("/AdGuard", (req, res) => {
  */
 server.use(express.json())
 server.use(express.urlencoded({ extended: false }))
-server.post("/pic/:params", (req, res) => {
-    res.setHeader("Content-Type", "image/jpeg")
-    res.sendFile(__dirname + "/dist/assets/1.07b89d99.jpg")
+server.post("/pic", (req, res) => {
+    res.setHeader("Content-Type", "text/plain;charset=utf-8")
+    res.sendFile(__dirname + `/assets/${req.body.fileName}.vue`)
     console.log(req.params)
     console.log(req.body)
 })
