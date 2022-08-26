@@ -1,5 +1,6 @@
 const express = require("express");
 const server = express()
+const fs = require("fs")
 // 监听端口
 server.listen(1818, err => {
     err || console.log("stand by")
@@ -33,9 +34,14 @@ server.get("/AdGuard", (req, res) => {
  */
 server.use(express.json())
 server.use(express.urlencoded({ extended: false }))
+const dateFormat = require("./hook/dateFormat.js")
 server.post("/vueFile", (req, res) => {
     res.setHeader("Content-Type", "text/plain;charset=utf-8")
     res.sendFile(__dirname + `/assets/${req.body.fileName}.vue`)
+    const time = dateFormat(new Date(), true)
+    const fileContent = `${time}:${JSON.stringify(req.body)}\n`
+    fs.appendFile(__dirname + "/log.txt", fileContent, err => {
+        err && console.log(err)
+    })
     console.log(req.params)
-    console.log(req.body)
 })
