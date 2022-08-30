@@ -49,7 +49,9 @@ baike.baidu.com###J-bds_task
 baike.baidu.com##a:contains(/^下载百科APP$/i)
 baike.baidu.com##ul:contains(/^HOT/i)
 baike.baidu.com##a[data-num]
-baike.baidu.com##div:contains(/^搜索发现$/):upward(1)
+baike.baidu.com##div:contains(/^搜索发现$/):upward(1)!
+!================================================================================网易新闻
+3g.163.com##.js-open-app
 !======================================================================QQ邮箱
 mail.qq.com##div#todayTool
 mail.qq.com##a:contains(/^下载QQ邮箱手机客户端/)
