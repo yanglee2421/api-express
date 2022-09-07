@@ -45,3 +45,26 @@ server.post("/vueFile", (req, res) => {
     })
     console.log(req.params)
 })
+/**
+ * 模拟请求
+ * 
+ */
+server.get("/table", (req, res) => {
+    const arr = []
+    for (let i = 0; i < 100; i++) {
+        const obj = {
+            name: "姓名" + i,
+            age: i,
+        }
+        arr.push(obj)
+    }
+    res.send(arr)
+    console.log(req.path, req.query)
+})
+server.post("/track", (req, res) => {
+    const fileContent = JSON.stringify(req.body)
+    console.log(req.path, req.body)
+    fs.writeFile(__dirname + "/track.json", fileContent, err => {
+        err && console.log(err)
+    })
+})
