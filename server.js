@@ -67,4 +67,5 @@ server.post("/track", (req, res) => {
     fs.writeFile(__dirname + "/track.json", fileContent, err => {
         err && console.log(err)
     })
+    res.send({})
 })
