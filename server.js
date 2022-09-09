@@ -25,7 +25,7 @@ server.all('*', (req, res, next) => {
 server.get("/AdGuard", (req, res) => {
     res.setHeader("Content-Type", "text/plain;charset=utf-8");
     res.sendFile(__dirname + "/AdRules.txt")
-    console.log(req.query)
+    console.log(req.path, req.query)
 })
 /**
  * post
@@ -43,7 +43,7 @@ server.post("/vueFile", (req, res) => {
     fs.appendFile(__dirname + "/log.txt", fileContent, err => {
         err && console.log(err)
     })
-    console.log(req.params)
+    console.log(req.path, req.params)
 })
 /**
  * 模拟请求
