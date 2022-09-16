@@ -1,7 +1,7 @@
 const express = require("express");
 const server = express();
 server.listen(4399, (err) => {
-  err || console.log(err);
+  err || console.log("待机中。。。");
 });
 server.all("*", (req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
