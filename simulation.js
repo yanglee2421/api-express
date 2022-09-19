@@ -16,6 +16,8 @@ server.all("*", (req, res, next) => {
   next();
 });
 /**
+ * 解析form请求的body
+ * 解析xmlHttpRequest请求的body
  */
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
@@ -25,8 +27,17 @@ server.get("/pdf-blob", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./data/123.pdf"));
   console.log(req.path, req.body);
 });
+server.get("/pic-blob", (req, res) => {
+  res.setHeader("Content-Type", "image/jpeg");
+  res.sendFile(path.resolve(__dirname, "./data/pic02.jpg"));
+  console.log(req.path, req.body);
+});
 // 下载
 server.get("/pdf-raw", (req, res) => {
   res.download(path.resolve(__dirname, "./data/777.pdf"));
+  console.log(req.path, req.body);
+});
+server.get("/pic-raw", (req, res) => {
+  res.download(path.resolve(__dirname, "./data/pic02.jpg"));
   console.log(req.path, req.body);
 });
