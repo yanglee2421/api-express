@@ -14,34 +14,21 @@ server.all("*", (req, res, next) => {
   next();
 });
 /**
- * 实施工单表格
- * 工单类型
- * 实施系统
  */
-server.post("/ticket/api/Ticket/GetTicketPage", (req, res) => {
-  const Data = require("./data/GetTicketPage.js");
+server.use(express.json());
+server.use(express.urlencoded({ extended: false }));
+server.post("/opt", (req, res) => {
+  const Data = [];
+  for (let i = 1; i < 100; i++) {
+    Data.push({
+      DictionaryValue: `用户${i}`,
+      DictionaryKey: i,
+    });
+  }
   const ret = {
     Code: 1,
     Data,
   };
   res.send(ret);
-  console.log(req.path, req.query);
-});
-server.post("/ticket/api/Ticket/GetTicketType", (req, res) => {
-  const Data = require("./data/GetTicketType.js");
-  const ret = {
-    Code: 1,
-    Data,
-  };
-  res.send(ret);
-  console.log(req.path, req.query);
-});
-server.post("/ticket/api/Ticket/GetTicketSystemType", (req, res) => {
-  const Data = require("./data/GetTicketSystemType.js");
-  const ret = {
-    Code: 1,
-    Data,
-  };
-  res.send(ret);
-  console.log(req.path, req.query);
+  console.log(req.path, req.body);
 });
