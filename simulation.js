@@ -21,7 +21,8 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 // 预览
 server.get("/pdf-blob", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./data/888.pdf"));
+  res.setHeader("Content-Type", "application/pdf");
+  res.sendFile(path.resolve(__dirname, "./data/123.pdf"));
   console.log(req.path, req.body);
 });
 // 下载
