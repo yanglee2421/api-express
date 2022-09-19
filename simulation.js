@@ -1,8 +1,10 @@
 const express = require("express");
 const server = express();
+const path = require("path");
 server.listen(4399, (err) => {
   err || console.log("待机中。。。");
 });
+server.use(express.static(path.resolve(__dirname, "./data")));
 server.all("*", (req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
@@ -17,18 +19,7 @@ server.all("*", (req, res, next) => {
  */
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
-server.post("/opt", (req, res) => {
-  const Data = [];
-  for (let i = 1; i < 100; i++) {
-    Data.push({
-      DictionaryValue: `用户${i}`,
-      DictionaryKey: i,
-    });
-  }
-  const ret = {
-    Code: 1,
-    Data,
-  };
-  res.send(ret);
+/* server.get("/pdf", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./data/133.pdf"));
   console.log(req.path, req.body);
-});
+}); */
