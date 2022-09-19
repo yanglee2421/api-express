@@ -19,7 +19,13 @@ server.all("*", (req, res, next) => {
  */
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
-/* server.get("/pdf", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./data/133.pdf"));
+// 预览
+server.get("/pdf-blob", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./data/888.pdf"));
   console.log(req.path, req.body);
-}); */
+});
+// 下载
+server.get("/pdf-raw", (req, res) => {
+  res.download(path.resolve(__dirname, "./data/777.pdf"));
+  console.log(req.path, req.body);
+});
