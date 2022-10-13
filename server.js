@@ -1,6 +1,7 @@
 const express = require("express");
 const server = express();
 const fs = require("fs");
+const path = require("path");
 // 监听端口
 server.listen(1818, (err) => {
   err || console.log("stand by");
@@ -24,45 +25,27 @@ server.all("*", (req, res, next) => {
   res.setHeader("Content-Type", "application/json;charset=utf-8");
   next();
 });
-// get请求
+/**
+ * get
+ * post
+ */
 server.get("/AdGuard", (req, res) => {
   res.setHeader("Content-Type", "text/plain;charset=utf-8");
   res.sendFile(__dirname + "/AdRules.txt");
   console.log(req.path, req.query);
 });
-/**
- * post
- * 处理请求
- * 处理表单
- */
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 const dateFormat = require("./hook/dateFormat.js");
 server.post("/vueFile", (req, res) => {
   res.setHeader("Content-Type", "text/plain;charset=utf-8");
-  res.sendFile(__dirname + `/assets/${req.body.fileName}.vue`);
+  res.sendFile(path.resolve(__dirname, `/assets/${req.body.fileName}.vue`));
   const time = dateFormat(new Date(), true);
   const fileContent = `${time}:${JSON.stringify(req.body)}\n`;
-  fs.appendFile(__dirname + "/log.txt", fileContent, (err) => {
+  fs.appendFile(path.resolve(__dirname, "/log.txt"), fileContent, (err) => {
     err && console.log(err);
   });
   console.log(req.path, req.params);
-});
-/**
- * 模拟请求
- *
- */
-server.get("/table", (req, res) => {
-  const arr = [];
-  for (let i = 0; i < 100; i++) {
-    const obj = {
-      name: "姓名" + i,
-      age: i,
-    };
-    arr.push(obj);
-  }
-  res.send(arr);
-  console.log(req.path, req.query);
 });
 server.post("/track", (req, res) => {
   const fileContent = JSON.stringify(req.body);
