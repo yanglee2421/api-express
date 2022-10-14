@@ -1,7 +1,7 @@
 const express = require("express");
 const server = express();
 // 监听端口
-server.listen(1818, (err) => {
+server.listen(80, (err) => {
   err || console.log("stand by");
 });
 // 部署静态文件
