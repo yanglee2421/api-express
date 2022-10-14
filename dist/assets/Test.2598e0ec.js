@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as s,g as o}from"./index.ea0fa918.js";const c={inheritAttrs:!0},n=o("div",{class:"test"},null,-1),r=[n];function a(_,i,d,l,p,u){return s(),e("div",null,r)}const h=t(c,[["render",a]]);export{h as default};
