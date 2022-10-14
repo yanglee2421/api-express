@@ -1,13 +1,12 @@
 const express = require("express");
 const server = express();
-const fs = require("fs");
-const path = require("path");
 // 监听端口
 server.listen(1818, (err) => {
   err || console.log("stand by");
 });
 // 部署静态文件
-server.use(express.static(__dirname + "/dist"));
+const path = require("path");
+server.use(express.static(path.resolve(__dirname, "./dist")));
 // 设置全局响应头
 server.all("*", (req, res, next) => {
   /**
@@ -31,27 +30,36 @@ server.all("*", (req, res, next) => {
  */
 server.get("/AdGuard", (req, res) => {
   res.setHeader("Content-Type", "text/plain;charset=utf-8");
-  res.sendFile(__dirname + "/AdRules.txt");
+  res.sendFile(path.resolve(__dirname, "/AdRules.txt"));
   console.log(req.path, req.query);
 });
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
-const dateFormat = require("./hook/dateFormat.js");
 server.post("/vueFile", (req, res) => {
   res.setHeader("Content-Type", "text/plain;charset=utf-8");
-  res.sendFile(path.resolve(__dirname, `/assets/${req.body.fileName}.vue`));
-  const time = dateFormat(new Date(), true);
-  const fileContent = `${time}:${JSON.stringify(req.body)}\n`;
-  fs.appendFile(path.resolve(__dirname, "/log.txt"), fileContent, (err) => {
-    err && console.log(err);
-  });
+  res.sendFile(path.resolve(__dirname, `./assets/${req.body.fileName}.vue`));
   console.log(req.path, req.params);
 });
-server.post("/track", (req, res) => {
-  const fileContent = JSON.stringify(req.body);
+/**
+ * pdf和图片
+ * 预览
+ * 下载
+ */
+server.get("/pdf-blob", (req, res) => {
+  res.setHeader("Content-Type", "application/pdf");
+  res.sendFile(path.resolve(__dirname, "./data/123.pdf"));
   console.log(req.path, req.body);
-  fs.writeFile(__dirname + "/track.json", fileContent, (err) => {
-    err && console.log(err);
-  });
-  res.send({});
+});
+server.get("/pic-blob", (req, res) => {
+  res.setHeader("Content-Type", "image/jpeg");
+  res.sendFile(path.resolve(__dirname, "./data/pic02.jpg"));
+  console.log(req.path, req.body);
+});
+server.get("/pdf-raw", (req, res) => {
+  res.download(path.resolve(__dirname, "./data/777.pdf"));
+  console.log(req.path, req.body);
+});
+server.get("/pic-raw", (req, res) => {
+  res.download(path.resolve(__dirname, "./data/pic02.jpg"));
+  console.log(req.path, req.body);
 });
