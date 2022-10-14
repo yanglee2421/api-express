@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s,g as o}from"./index.7d3d19dc.js";const r={inheritAttrs:!0},c=o("div",{class:"test"},null,-1),n=[c];function a(_,i,d,l,p,u){return s(),t("div",null,n)}const m=e(r,[["render",a],["__file","C:/Users/Administrator/Desktop/vue3/src/test/Test.vue"]]);export{m as default};

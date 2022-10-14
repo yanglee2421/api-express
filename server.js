@@ -7,6 +7,7 @@ server.listen(1818, (err) => {
 // 部署静态文件
 const path = require("path");
 server.use(express.static(path.resolve(__dirname, "./dist")));
+server.use("/test", express.static(path.resolve(__dirname, "./test")));
 // 设置全局响应头
 server.all("*", (req, res, next) => {
   /**
