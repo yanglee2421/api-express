@@ -32,48 +32,24 @@ server.all("*", (req, res, next) => {
  * 预览
  * 下载
  */
-const fs = require("fs");
+const useLog = require("./hook/useLog.js");
 server.get("/pdf-blob", (req, res) => {
   res.setHeader("Content-Type", "application/pdf");
   res.sendFile(path.resolve(__dirname, "./assets/pdf.pdf"));
-  fs.appendFile(
-    path.resolve(__dirname, "../log/log.txt"),
-    `${new Date()}，请求了：${req.path}\n`,
-    (err) => {
-      console.log(err);
-    }
-  );
+  useLog(req.path);
 });
 server.get("/pic-blob", (req, res) => {
   res.setHeader("Content-Type", "image/jpeg");
   res.sendFile(path.resolve(__dirname, "./assets/bg.jpg"));
-  fs.appendFile(
-    path.resolve(__dirname, "../log/log.txt"),
-    `${new Date()}，请求了：${req.path}\n`,
-    (err) => {
-      console.log(err);
-    }
-  );
+  useLog(req.path);
 });
 server.get("/pdf-raw", (req, res) => {
   res.download(path.resolve(__dirname, "./assets/pdf.pdf"));
-  fs.appendFile(
-    path.resolve(__dirname, "../log/log.txt"),
-    `${new Date()}，请求了：${req.path}\n`,
-    (err) => {
-      console.log(err);
-    }
-  );
+  useLog(req.path);
 });
 server.get("/pic-raw", (req, res) => {
   res.download(path.resolve(__dirname, "./assets/bg.jpg"));
-  fs.appendFile(
-    path.resolve(__dirname, "../log/log.txt"),
-    `${new Date()}，请求了：${req.path}\n`,
-    (err) => {
-      console.log(err);
-    }
-  );
+  useLog(req.path);
 });
 /**
  * 必应每日壁纸重定向接口
