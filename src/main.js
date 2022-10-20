@@ -28,31 +28,12 @@ server.all("*", (req, res, next) => {
   next();
 });
 /**
- * pdf和图片接口
- * 预览
- * 下载
+ * 文件预览下载接口
  */
-const useLog = require("./hook/useLog.js");
-server.get("/pdf-blob", (req, res) => {
-  res.setHeader("Content-Type", "application/pdf");
-  res.sendFile(path.resolve(__dirname, "./assets/pdf.pdf"));
-  useLog(req.path);
-});
-server.get("/pic-blob", (req, res) => {
-  res.setHeader("Content-Type", "image/jpeg");
-  res.sendFile(path.resolve(__dirname, "./assets/bg.jpg"));
-  useLog(req.path);
-});
-server.get("/pdf-raw", (req, res) => {
-  res.download(path.resolve(__dirname, "./assets/pdf.pdf"));
-  useLog(req.path);
-});
-server.get("/pic-raw", (req, res) => {
-  res.download(path.resolve(__dirname, "./assets/bg.jpg"));
-  useLog(req.path);
-});
+const useFile = require("./api/File");
+useFile(server);
 /**
- * 必应每日壁纸重定向接口
+ * 代理必应每日壁纸接口
  */
 const request = require("./api/request.js");
 server.get("/bing", (req, res) => {
