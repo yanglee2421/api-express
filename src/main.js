@@ -32,23 +32,48 @@ server.all("*", (req, res, next) => {
  * 预览
  * 下载
  */
+const fs = require("fs");
 server.get("/pdf-blob", (req, res) => {
   res.setHeader("Content-Type", "application/pdf");
-  res.sendFile(path.resolve(__dirname, "./data/123.pdf"));
-  console.log(req.path, req.body);
+  res.sendFile(path.resolve(__dirname, "./assets/pdf.pdf"));
+  fs.appendFile(
+    path.resolve(__dirname, "../log/log.txt"),
+    `${new Date()}，请求了：${req.path}\n`,
+    (err) => {
+      console.log(err);
+    }
+  );
 });
 server.get("/pic-blob", (req, res) => {
   res.setHeader("Content-Type", "image/jpeg");
-  res.sendFile(path.resolve(__dirname, "./data/pic02.jpg"));
-  console.log(req.path, req.body);
+  res.sendFile(path.resolve(__dirname, "./assets/bg.jpg"));
+  fs.appendFile(
+    path.resolve(__dirname, "../log/log.txt"),
+    `${new Date()}，请求了：${req.path}\n`,
+    (err) => {
+      console.log(err);
+    }
+  );
 });
 server.get("/pdf-raw", (req, res) => {
-  res.download(path.resolve(__dirname, "./data/777.pdf"));
-  console.log(req.path, req.body);
+  res.download(path.resolve(__dirname, "./assets/pdf.pdf"));
+  fs.appendFile(
+    path.resolve(__dirname, "../log/log.txt"),
+    `${new Date()}，请求了：${req.path}\n`,
+    (err) => {
+      console.log(err);
+    }
+  );
 });
 server.get("/pic-raw", (req, res) => {
-  res.download(path.resolve(__dirname, "./data/pic02.jpg"));
-  console.log(req.path, req.body);
+  res.download(path.resolve(__dirname, "./assets/bg.jpg"));
+  fs.appendFile(
+    path.resolve(__dirname, "../log/log.txt"),
+    `${new Date()}，请求了：${req.path}\n`,
+    (err) => {
+      console.log(err);
+    }
+  );
 });
 /**
  * 必应每日壁纸重定向接口
