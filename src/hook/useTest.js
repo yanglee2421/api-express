@@ -11,5 +11,5 @@ queueMicrotask(() => {
   console.log("micro2");
 });
 setTimeout(() => {
-  console.log("宏任务1");
+  console.log("宏任务2");
 }, 0);
