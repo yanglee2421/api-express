@@ -28,7 +28,7 @@ server.all("*", (req, res, next) => {
   next();
 });
 /**
- * pdf和图片
+ * pdf和图片接口
  * 预览
  * 下载
  */
@@ -49,4 +49,22 @@ server.get("/pdf-raw", (req, res) => {
 server.get("/pic-raw", (req, res) => {
   res.download(path.resolve(__dirname, "./data/pic02.jpg"));
   console.log(req.path, req.body);
+});
+/**
+ * 必应每日壁纸重定向接口
+ */
+const request = require("./api/request.js");
+server.get("/bing", (req, res) => {
+  const { idx = 0, n = 1 } = req.query;
+  request({
+    method: "get",
+    url: "https://cn.bing.com/HPImageArchive.aspx",
+    params: {
+      format: "js",
+      idx,
+      n,
+    },
+  }).then(({ images }) => {
+    res.json(images.map((item) => `https://cn.bing.com${item.url}`));
+  });
 });
