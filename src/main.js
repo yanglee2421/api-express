@@ -28,11 +28,6 @@ server.all("*", (req, res, next) => {
   next();
 });
 /**
- * 文件预览下载接口
- */
-const useFile = require("./api/File");
-useFile(server);
-/**
  * 代理必应每日壁纸接口
  */
 const request = require("./api/request.js");
@@ -50,3 +45,13 @@ server.get("/bing", (req, res) => {
     res.json(images.map((item) => `https://cn.bing.com${item.url}`));
   });
 });
+/**
+ * 文件预览下载接口
+ */
+const useFile = require("./api/File");
+useFile(server);
+/**
+ * 代理接口
+ */
+const useRedirect = require("./api/redirect");
+useRedirect(server);
