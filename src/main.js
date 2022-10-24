@@ -31,7 +31,9 @@ server.all("*", (req, res, next) => {
  * 代理必应每日壁纸接口
  */
 const request = require("./api/request.js");
+const useLog = require("./hook/useLog");
 server.get("/bing", (req, res) => {
+  useLog(req.path);
   const { idx = 0, n = 1 } = req.query;
   request({
     method: "get",
