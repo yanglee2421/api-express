@@ -10,6 +10,8 @@ server.use(express.static(path.resolve(__dirname, "../dist")));
 server.use("/public", express.static(path.resolve(__dirname, "../public")));
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
+const history = require("connect-history-api-fallback");
+server.use(history());
 // 设置全局响应头
 server.all("*", (req, res, next) => {
   /**
