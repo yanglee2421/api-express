@@ -4,7 +4,12 @@ const server = express();
 server.listen(80, (err) => {
   console.log(err ? err : "stand by");
 });
-// 部署静态文件
+/**
+ * 部署静态资源
+ * 解决xhr中无法获取post请求中的body的问题
+ * 解决form中无不获取post请求中的body的问题
+ * 解决history模式路由的网页无法刷新的问题
+ */
 const path = require("path");
 server.use(express.static(path.resolve(__dirname, "../dist")));
 server.use("/public", express.static(path.resolve(__dirname, "../public")));

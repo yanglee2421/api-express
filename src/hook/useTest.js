@@ -1,15 +1,3 @@
-Promise.resolve().then(() => {
-  console.log("微任务");
-  queueMicrotask(() => {
-    console.log("queueMic");
-  });
-  setTimeout(() => {
-    console.log("宏任务1");
-  }, 0);
-});
-queueMicrotask(() => {
-  console.log("micro2");
-});
-setTimeout(() => {
-  console.log("宏任务2");
-}, 0);
+const arr = [0, 1, 2, 3];
+arr[11] = 10;
+console.log(arr[5]);
