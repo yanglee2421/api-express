@@ -3,16 +3,11 @@ const request = axios.create({
   timeout: 60000,
   baseURL: "",
 });
-request.interceptors.request.use(
-  (config) => {
-    config.headers.Authorization = `Bearer `;
-    config.headers["Content-Type"] = "application/json;charset=utf-8";
-    return config;
-  },
-  (err) => {
-    console.log(err);
-  }
-);
+request.interceptors.request.use((config) => {
+  config.headers.Authorization = `Bearer `;
+  config.headers["Content-Type"] = "application/json;charset=utf-8";
+  return config;
+});
 request.interceptors.response.use(
   (res) => {
     const { data, status, statusText } = res;
@@ -20,10 +15,12 @@ request.interceptors.response.use(
       return data;
     } else {
       console.warn(statusText);
+      return new Promise(() => {});
     }
   },
   (err) => {
-    console.log(err);
+    console.error(err);
+    return new Promise(() => {});
   }
 );
 module.exports = request;
