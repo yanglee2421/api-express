@@ -6,4 +6,3 @@ const setAge = function (num) {
 exports.name = name;
 exports.age = age;
 exports.setAge = setAge;
-// export default obj;
