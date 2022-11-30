@@ -1,5 +1,5 @@
 @use "./scss/mod-02.scss" as *;
 .index {
-  //   color: $mod-01-red;
-  @extend .mod-01;
+  color: $mod-01-mod-01-var;
+  @extend .mod-01-rule;
 }

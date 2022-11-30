@@ -1,5 +1,6 @@
-$mod-01-red: #f00;
-.mod-01 {
-  color: $mod-01-red;
+$mod-01-var: #f00;
+.mod-01-rule {
+  /*mod-01-rule*/
+  color: $mod-01-var;
   display: flex;
 }
