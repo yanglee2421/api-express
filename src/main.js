@@ -21,16 +21,15 @@ server.all("*", (req, res, next) => {
   next();
 });
 /**
+ * 路由
  * json格式的请求体
  * urlencoded格式的请求体
- */
-server.use(express.json());
-server.use(express.urlencoded({ extended: false }));
-/**
  * 必应壁纸
  * 文件预览下载接口
  * 代理接口
  */
+server.use(express.json());
+server.use(express.urlencoded({ extended: false }));
 server.use(require("./router/bingRouter"));
 server.use(require("./router/fileRouter"));
 server.use(require("./router/redirectRouter"));
