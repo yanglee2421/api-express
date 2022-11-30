@@ -1,10 +1,8 @@
-const express = require("express");
-const request = require("../../api/request");
+const router = require("express").Router();
+const HPImageArchive = require("../../api/HPImageArchive");
 /**
  * 代理必应每日壁纸接口
  */
-const router = express.Router();
-const HPImageArchive = require("../../api/HPImageArchive");
 router.get("/bing", (req, res) => {
   const { idx = 0, n = 1 } = req.query;
   HPImageArchive({ idx, n }).then(({ images }) => {
