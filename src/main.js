@@ -1,3 +1,4 @@
+require("module-alias/register");
 const express = require("express");
 const server = express();
 const path = require("path");
@@ -30,9 +31,9 @@ server.all("*", (req, res, next) => {
  */
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
-server.use(require("./router/bingRouter"));
-server.use(require("./router/fileRouter"));
-server.use(require("./router/redirectRouter"));
+server.use(require("@/router/bingRouter"));
+server.use(require("@/router/fileRouter"));
+server.use(require("@/router/redirectRouter"));
 /**
  * 路由history模式
  * 部署静态资源

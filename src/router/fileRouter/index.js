@@ -1,5 +1,5 @@
 const path = require("path");
-const useLog = require("../../hook/useLog");
+const useLog = require("@/hook/useLog");
 const router = require("express").Router();
 /**
  * pdf和图片接口

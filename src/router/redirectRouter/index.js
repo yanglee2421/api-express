@@ -1,4 +1,4 @@
-const useLog = require("../../hook/useLog");
+const useLog = require("@/hook/useLog");
 const router = require("express").Router();
 /**
  * 重定向路由

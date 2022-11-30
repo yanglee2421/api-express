@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const HPImageArchive = require("../../api/HPImageArchive");
+const HPImageArchive = require("@/api/HPImageArchive");
 /**
  * 代理必应每日壁纸接口
  */
