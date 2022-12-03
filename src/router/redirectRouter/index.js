@@ -1,10 +1,14 @@
 const useLog = require("@/hook/useLog");
 const router = require("express").Router();
+const HPImageArchive = require("@/api/HPImageArchive");
 /**
  * 重定向路由
  */
 router.get("/redirect/*", (req, res) => {
-  res.redirect("https://www.baidu.com");
+  HPImageArchive().then(({ images }) => {
+    const imgArr = images.map((item) => `https://cn.bing.com${item.url}`);
+    res.redirect(imgArr[0]);
+  });
   useLog(JSON.stringify(req.path.replace(/^\/redirect/, "")));
 });
 module.exports = router;
