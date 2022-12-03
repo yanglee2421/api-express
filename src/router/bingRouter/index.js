@@ -5,8 +5,12 @@ const HPImageArchive = require("@/api/HPImageArchive");
  */
 router.get("/bing", (req, res) => {
   const { idx = 0, n = 1 } = req.query;
-  HPImageArchive({ idx, n }).then(({ images }) => {
-    res.json(images.map((item) => `https://cn.bing.com${item.url}`));
-  });
+  HPImageArchive({ idx, n })
+    .then(({ images }) => {
+      res.json(images.map((item) => `https://cn.bing.com${item.url}`));
+    })
+    .catch((err) => {
+      res.statusCode(500);
+    });
 });
 module.exports = router;
