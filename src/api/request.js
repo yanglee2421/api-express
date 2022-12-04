@@ -11,12 +11,9 @@ request.interceptors.request.use((config) => {
 request.interceptors.response.use(
   (res) => {
     const { data, status, statusText } = res;
-    if (status === 200) {
-      return data;
-    } else {
-      console.warn(statusText);
-      return new Promise(() => {});
-    }
+    if (status === 200) return data;
+    console.warn(statusText);
+    return new Promise(() => {});
   },
   (err) => {
     console.error(err);
