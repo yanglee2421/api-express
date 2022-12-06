@@ -1,7 +1,8 @@
+const baseURL = "";
 const axios = require("axios");
 const request = axios.create({
   timeout: 60000,
-  baseURL: "",
+  baseURL,
 });
 request.interceptors.request.use((config) => {
   config.headers.Authorization = `Bearer `;
