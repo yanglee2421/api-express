@@ -25,9 +25,9 @@ server
    */
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
-  .use(require("@/router/login"))
+  .use("/api", require("@/router/login"))
   .use(require("@/router/bingRouter"))
-  .use("/file", require("@/router/fileRouter"))
+  .use("/file", require("@/router/file"))
   .use(require("@/router/redirectRouter"))
   /**
    * 路由history模式
