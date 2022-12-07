@@ -1,4 +1,3 @@
-const useLog = require("@/hook/useLog");
 const router = require("express").Router();
 const HPImageArchive = require("@/api/HPImageArchive");
 /**
@@ -13,6 +12,5 @@ router.get("/redirect/*", (req, res) => {
     .catch((err) => {
       res.statusCode(500);
     });
-  useLog(JSON.stringify(req.path.replace(/^\/redirect/, "")));
 });
 module.exports = router;

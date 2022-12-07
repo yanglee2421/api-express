@@ -1,11 +1,10 @@
-const baseURL = "";
 const axios = require("axios");
 const request = axios.create({
   timeout: 60000,
-  baseURL,
+  baseURL: "",
 });
 request.interceptors.request.use((config) => {
-  config.headers.Authorization = `Bearer `;
+  config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
   config.headers["Content-Type"] = "application/json;charset=utf-8";
   return config;
 });
