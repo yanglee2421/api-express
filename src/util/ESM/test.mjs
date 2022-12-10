@@ -1,7 +1,14 @@
-const target = new Boolean(false);
-console.log(target);
-const targetType = Object.prototype.toString.call(target);
-console.log("typeof", typeof target);
-console.log("strTag", target || targetType);
-console.log("==", target == false);
-console.log("===", target === false);
+const arr = [
+  { type: 0, name: "1" },
+  { type: 0, name: "2" },
+  { type: 1, name: "3" },
+  { type: 1, name: "4" },
+  { type: 2, name: "5" },
+  { type: 2, name: "6" },
+];
+const types = [...new Set(arr.map((item) => item.type))];
+const res = types.map((type) => ({
+  type,
+  value: arr.filter((item) => item.type === type),
+}));
+console.log(res);
