@@ -4,7 +4,7 @@ const request = axios.create({
   baseURL: "",
 });
 request.interceptors.request.use((config) => {
-  config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
+  // config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
   config.headers["Content-Type"] = "application/json;charset=utf-8";
   return config;
 });
