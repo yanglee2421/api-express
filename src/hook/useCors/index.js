@@ -3,8 +3,6 @@ const whiteList = [
   "http://127.0.0.1",
   "http://localhost",
   "http://192.168.1.4",
-  "http://localhost:5173",
-  "http://localhost:5174",
 ];
 
 module.exports = () =>

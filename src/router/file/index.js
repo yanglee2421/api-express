@@ -1,14 +1,17 @@
 const path = require("path");
 const router = require("express").Router();
-const useToken = require("@/hook/useToken");
+const useCors = require("@/hook/useCors");
+const { verify } = require("@/hook/useJWT");
 
 router
   /**
+   * 跨域校验
    * 身份校验
    */
-  .use(useToken())
+  .use(useCors())
+  .use(verify())
   /**
-   * 需要校验的接口
+   * 服务接口
    */
   .get("/pdf-blob", (req, res) => {
     res.setHeader("Content-Type", "application/pdf");
