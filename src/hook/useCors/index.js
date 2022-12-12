@@ -1,8 +1,10 @@
 const cors = require("cors");
 const whiteList = [
-  "http://192.168.3.3",
-  "http://192.168.3.3:5173",
-  "http://192.168.3.3:5174",
+  "http://127.0.0.1",
+  "http://localhost",
+  "http://192.168.1.4",
+  "http://localhost:5173",
+  "http://localhost:5174",
 ];
 
 module.exports = () =>
