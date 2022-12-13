@@ -1,9 +1,11 @@
 const path = require("path");
+const fs = require("fs/promises");
 const { Service } = require("node-windows");
+const scriptUrl = path.resolve(__dirname, "./app/main.js");
 const service = new Service({
-  name: "node-server",
-  script: path.resolve(__dirname, "./app/main.js"),
-  description: "Node搭建的个人服务器",
+  name: "A Node.js service by Yang Lee",
+  script: scriptUrl,
+  description: "",
   abortOnError: true,
   nodeOptions: [],
 });
@@ -14,5 +16,11 @@ service.on("install", () => {
 service.on("uninstall", () => {
   console.log("卸载成功！");
 });
-service.install();
+fs.readFile(scriptUrl, "utf8")
+  .then((res) => {
+    service.install();
+  })
+  .catch(() => {
+    console.error("安装时出现了一些问题，可能是没有打包");
+  });
 module.exports = service;

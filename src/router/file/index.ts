@@ -1,8 +1,8 @@
-const path = require("path");
-const router = require("express").Router();
-const useCors = require("@/hook/useCors");
-const { verify } = require("@/hook/useJWT");
-
+import path from "path";
+import useCors from "@/hook/useCors";
+import { Router } from "express";
+import { verify } from "@/hook/useJWT";
+const router = Router();
 router
   /**
    * 跨域校验
@@ -27,7 +27,4 @@ router
   .get("/pic-raw", (req, res) => {
     res.download(path.resolve(__dirname, "../../../public/img/bg.jpg"));
   });
-/**
- * 导出路由器
- */
-module.exports = router;
+export default router;

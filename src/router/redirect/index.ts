@@ -1,5 +1,6 @@
-const router = require("express").Router();
-const HPImageArchive = require("@/api/HPImageArchive");
+import { Router } from "express";
+import HPImageArchive from "@/api/HPImageArchive";
+const router = Router();
 /**
  * 重定向路由
  */
@@ -10,7 +11,7 @@ router.get("/redirect/*", (req, res) => {
       res.redirect(imgArr[0]);
     })
     .catch((err) => {
-      res.statusCode(500);
+      res.writeHead(500);
     });
 });
-module.exports = router;
+export default router;

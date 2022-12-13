@@ -3,9 +3,27 @@ import history from "connect-history-api-fallback";
 import express from "express";
 import path from "path";
 import { createServer } from "http";
-import mod from "@/util/mode";
+import { redRouter, bingRouter, fileRouter, loginRouter } from "@/router";
 const server = express();
 createServer(server).listen(80, () => {
-  console.log("stand by");
+  console.info("service is standing by");
+  console.info("http://localhost");
 });
-mod();
+/**
+ * 部署网页
+ */
+server
+  .use(
+    "/vue",
+    history(),
+    express.static(path.resolve(__dirname, "../../page/vue-app"))
+  )
+  .use(
+    "/react",
+    history(),
+    express.static(path.resolve(__dirname, "../../page/vue-app"))
+  );
+/**
+ * 路由
+ */
+server.use(bingRouter).use(fileRouter).use(loginRouter).use(redRouter);
