@@ -1,6 +1,5 @@
 /node_modules/
-track.json
-*/daemon/
 dist/
-micro-app
 log/log.txt
+micro-app
+script/app/

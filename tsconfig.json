@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // 严格模式
+    "strict": true,
+    // 打包
+    "outDir": "./script/app",
+    "skipLibCheck": true,
+    // 路径别名
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] },
+    // 以下为typeorm强制要求的
+    "lib": ["es5", "es6"],
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

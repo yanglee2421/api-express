@@ -1,10 +1,10 @@
-const axios = require("axios");
+import axios, { AxiosRequestConfig } from "axios";
 const request = axios.create({
   timeout: 60000,
   baseURL: "",
 });
 request.interceptors.request.use((config) => {
-  // config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
+  if (!config.headers) return config;
   config.headers["Content-Type"] = "application/json;charset=utf-8";
   return config;
 });
@@ -20,4 +20,6 @@ request.interceptors.response.use(
     return new Promise(() => {});
   }
 );
-module.exports = request;
+export default async <T = unknown>(params: AxiosRequestConfig) => {
+  return (await request(params)) as unknown as T;
+};

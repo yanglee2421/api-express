@@ -1,8 +1,0 @@
-@forward "./mod-01.scss" as mod-01-*;
-$mod-02-var: #800;
-.mod-02-rule {
-  /*mod-02-rule*/
-  flex: 1;
-  background-color: $mod-02-var;
-  @extend.mod-01-rule;
-}
