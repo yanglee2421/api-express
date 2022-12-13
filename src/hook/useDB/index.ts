@@ -1,6 +1,9 @@
 import { DataSource } from "typeorm";
-const dataSouce = new DataSource({
+import path from "path";
+import { User } from "../../entity";
+const dataSource = new DataSource({
   type: "sqlite",
-  database: "../../../data/sqlite.sqlite",
+  database: path.resolve(__dirname, "../../../data/sqlite.sqlite"),
+  entities: [User],
 });
-export default dataSouce.initialize();
+export default () => dataSource;
