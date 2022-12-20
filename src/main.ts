@@ -1,11 +1,10 @@
 import "module-alias/register";
 import history from "connect-history-api-fallback";
 import express from "express";
-import path from "path";
 import { createServer } from "http";
 import { redRouter, bingRouter, fileRouter, loginRouter } from "@/router";
 import { useDB, uselog } from "@/hook";
-import { User } from "@/entity";
+import User from "@/hook/useDB/entity/User";
 const server = express();
 createServer(server).listen(80, () => {
   console.info("service is standing by");
@@ -14,17 +13,11 @@ createServer(server).listen(80, () => {
 /**
  * 部署网页
  */
+const rootUrl = "C:\\Users\\xtcff\\Desktop\\AdGuard\\";
 server
-  .use(
-    "/vue",
-    history(),
-    express.static(path.resolve(__dirname, "../../page/vue-app"))
-  )
-  .use(
-    "/react",
-    history(),
-    express.static(path.resolve(__dirname, "../../page/vue-app"))
-  );
+  .use("/public", express.static(rootUrl + "public"))
+  .use("/vue", history(), express.static(rootUrl + "page\\vue-app"))
+  .use("/react", history(), express.static(rootUrl + "page\\react-app"));
 /**
  * 路由
  */
@@ -34,7 +27,16 @@ server
   .use(redRouter)
   .use("/api", fileRouter)
   .use("/api", loginRouter);
-const db = useDB();
-db.initialize().then((ds) => {
-  ds.manager.save([new User()]);
+useDB((db) => {
+  const user = new User();
+  user.user_name = "Yang Lee";
+  user.user_pwd = "abc.123";
+  db.manager.save([user]).then((res) => {
+    console.log("增");
+  });
+  // db.manager.delete();
+  // db.manager.update();
+  db.manager.find(User).then((res) => {
+    console.log(res);
+  });
 });

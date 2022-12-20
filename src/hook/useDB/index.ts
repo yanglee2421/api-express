@@ -1,9 +1,9 @@
 import { DataSource } from "typeorm";
-import path from "path";
-import { User } from "../../entity";
 const dataSource = new DataSource({
   type: "sqlite",
-  database: path.resolve(__dirname, "../../../data/sqlite.sqlite"),
-  entities: [User],
+  database: __dirname + "/database.sqlite",
+  entities: [__dirname + "/entity/**.ts"],
 });
-export default () => dataSource;
+export default (callback: (db: DataSource) => void) => {
+  dataSource.initialize().then(callback);
+};
