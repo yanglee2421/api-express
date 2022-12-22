@@ -1,15 +1,14 @@
-const cors = require("cors");
+import cors from "cors";
 import express, { Router } from "express";
-import { sign } from "@/hook/useJWT";
+import { useSign } from "@/hook/useJWT";
 const router = Router();
 router
-  .use(cors())
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
   .post("/login", (req, res) => {
     const { user, pwd } = req.body;
     if (user === "admin" && pwd === "admin") {
-      const token = sign({ user, pwd });
+      const token = useSign({ user, pwd });
       res.json({ isPass: true, res: token });
       return;
     }

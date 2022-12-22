@@ -1,15 +1,7 @@
 import path from "path";
-import useCors from "@/hook/useCors";
 import { Router } from "express";
-import { verify } from "@/hook/useJWT";
 const router = Router();
 router
-  /**
-   * 跨域校验
-   * 身份校验
-   */
-  .use(useCors())
-  .use(verify())
   /**
    * 服务接口
    */
