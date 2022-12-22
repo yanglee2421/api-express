@@ -17,7 +17,13 @@ createServer(server).listen(80, () => {
 /**
  * REpresentational State Tranfer API
  */
-server.use(cors()).use(uselog()).use(bingRouter).use(redRouter);
+server
+  .use(cors())
+  .use(express.json())
+  .use(express.urlencoded({ extended: false }))
+  .use(uselog())
+  .use(bingRouter)
+  .use(redRouter);
 server.use("/auth", useCors(), loginRouter);
 server.use("/api", useCors(), useVerify(), fileRouter);
 /**
@@ -36,7 +42,5 @@ useDB((db) => {
   });
   // db.manager.delete();
   // db.manager.update();
-  db.manager.find(User).then((res) => {
-    console.log(res);
-  });
+  db.manager.find(User).then((res) => {});
 });
