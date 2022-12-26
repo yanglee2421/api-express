@@ -9,7 +9,7 @@ router.post("/login", (req, res) => {
       isPass: true,
       token,
       username: "admin",
-      invalidTime: Date.now() + 1000 * 60 * 60,
+      invalidTime: Date.now() + 1000 * 60 * 60 * 10,
     });
     return;
   }
