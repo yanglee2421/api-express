@@ -2,12 +2,17 @@ import { Router } from "express";
 import { useSign } from "@/hook/useJWT";
 const router = Router();
 router.post("/login", (req, res) => {
-  const { user, pwd } = req.body;
-  if (user === "admin" && pwd === "admin") {
-    const token = useSign({ user, pwd });
-    res.json({ isPass: true, res: token });
+  const { password, username } = req.body;
+  if (username === "admin" && password === "admin") {
+    const token = useSign({ username, password });
+    res.json({
+      isPass: true,
+      token,
+      username: "admin",
+      invalidTime: Date.now() + 1000 * 60 * 60,
+    });
     return;
   }
-  res.json({ isPass: false, res: "用户名或密码错误" });
+  res.json({ isPass: false, mes: "用户名或密码错误" });
 });
 export default router;
