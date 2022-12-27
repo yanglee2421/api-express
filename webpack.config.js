@@ -1,7 +1,7 @@
 const path = require("path");
 const nodeExternals = require("webpack-node-externals");
 module.exports = {
-  mode: "development",
+  mode: "production",
   target: "node",
   entry: "./src/main.ts",
   output: {
@@ -18,15 +18,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/, // .ts或者tsx后缀的文件，就是typescript文件
-        use: "ts-loader", // 就是上面安装的ts-loader
+        test: /\.tsx?$/, // .ts或者tsx后缀的文件
+        use: "ts-loader",
         exclude: "/node-modules/",
       },
       {
-        test: /\.(jpg|png|gif|pdf|sqlite3)$/,
+        test: /\.(jpg|png|gif|pdf)$/,
         type: "asset/resource",
       },
     ],
   },
   externals: [nodeExternals()],
+  plugins: [],
+  devtool: "inline-source-map",
 };
