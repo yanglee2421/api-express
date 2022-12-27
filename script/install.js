@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs/promises");
 const { Service } = require("node-windows");
-const scriptUrl = path.resolve(__dirname, "./app/main.js");
+const scriptUrl = path.resolve(__dirname, "../dist/main.js");
 const service = new Service({
   name: "A Node.js service by Yang Lee",
   script: scriptUrl,

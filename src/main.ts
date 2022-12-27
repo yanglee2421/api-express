@@ -1,4 +1,3 @@
-import "module-alias/register";
 import history from "connect-history-api-fallback";
 import express from "express";
 import { createServer } from "http";
