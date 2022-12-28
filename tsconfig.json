@@ -5,8 +5,6 @@
     // 严格模式
     "strict": true,
     "strictPropertyInitialization": false,
-    // 打包
-    "outDir": "./dist",
     "skipLibCheck": true,
     // 路径别名
     "baseUrl": ".",

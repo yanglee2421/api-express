@@ -5,30 +5,40 @@ module.exports = {
   target: "node",
   entry: "./src/main.ts",
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    path: path.resolve(__dirname, "./dist"),
+    filename: "[name].js",
     clean: true,
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": path.resolve(__dirname, "./src"),
     },
-    extensions: [".ts", ".tsx"], // 配置ts文件可以作为模块加载
+    extensions: [".ts", ".tsx"],
   },
   module: {
     rules: [
       {
-        test: /\.tsx?$/, // .ts或者tsx后缀的文件
-        use: "ts-loader",
-        exclude: "/node-modules/",
+        test: /\.m?jsx?$/,
+        exclude: "/node_modules/",
+        use: [
+          {
+            loader: "babel-loader",
+            options: { presets: ["@babel/preset-env"] },
+          },
+        ],
       },
       {
-        test: /\.(jpg|png|gif|pdf)$/,
-        type: "asset/resource",
+        test: /\.tsx?$/,
+        exclude: "/node_modules/",
+        use: [
+          {
+            loader: "babel-loader",
+            options: { presets: ["@babel/preset-env"] },
+          },
+          "ts-loader",
+        ],
       },
     ],
   },
   externals: [nodeExternals()],
-  plugins: [],
-  devtool: "inline-source-map",
 };
