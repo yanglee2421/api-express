@@ -6,5 +6,11 @@ const dataSource = new DataSource({
   entities: [User],
 });
 export default (callback: (db: DataSource) => void) => {
-  dataSource.initialize().then(callback);
+  dataSource
+    .initialize()
+    .then(callback)
+    .catch((err) => {
+      console.error("数据库连接异常");
+      console.error(err);
+    });
 };
