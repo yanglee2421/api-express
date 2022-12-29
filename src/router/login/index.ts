@@ -38,5 +38,33 @@ useDB((db) => {
       });
     });
   });
+  router.get("/query", (req, res) => {
+    db.manager
+      .find(User)
+      .then((rRes) => {
+        if (Array.isArray(rRes)) {
+          res.json({ isPassed: true, data: rRes });
+          return;
+        }
+        res.json({ isPassed: false, mes: "出错了" });
+      })
+      .catch((err) => {
+        console.error(err);
+        res.json({ isPassed: false, mes: "出错了" });
+      });
+  });
+  router.delete("/del/:id", (req, res) => {
+    const { id } = req.params;
+    db.manager.findOne(User, { where: [{ user_id: id }] }).then((rRes) => {
+      console.log(rRes);
+      if (!rRes) {
+        res.json({ isPassed: false, mes: "没有这个元素" });
+        return;
+      }
+      db.manager.remove(User, rRes).then((dRes) => {
+        res.json(dRes);
+      });
+    });
+  });
 });
 export default router;
