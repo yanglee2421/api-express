@@ -4,7 +4,7 @@ import { createServer } from "http";
 import cors from "cors";
 import useCors from "@/hook/useCors";
 import { useVerify } from "@/hook/useJWT";
-import { redRouter, bingRouter, fileRouter, loginRouter } from "@/router";
+import { redRouter, bingRouter, fileRouter, loginRouter, pwd } from "@/router";
 import { uselog } from "@/hook";
 const rootUrl = "C:\\Users\\xtcff\\Desktop\\AdGuard\\";
 const server = express();
@@ -24,6 +24,7 @@ server
   .use(redRouter);
 server.use("/auth", useCors(), loginRouter);
 server.use("/api", useCors(), useVerify(), fileRouter);
+server.use("/pwd", useCors(), useVerify(), pwd);
 /**
  * 部署网页
  */

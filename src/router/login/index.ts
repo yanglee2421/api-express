@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { useSign } from "@/hook/useJWT";
 import { useDB } from "@/hook";
-import User from "@/hook/useDB/entity/User";
+import { User } from "@/hook/useDB/entity";
 const router = Router();
 useDB((db) => {
   router.post("/login", (req, res) => {

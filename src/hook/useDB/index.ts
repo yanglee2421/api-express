@@ -1,9 +1,9 @@
 import { DataSource } from "typeorm";
-import User from "./entity/User";
+import { Pwd, User } from "./entity";
 const dataSource = new DataSource({
   type: "sqlite",
   database: "C:\\Users\\xtcff\\Desktop\\AdGuard\\database.sqlite3",
-  entities: [User],
+  entities: [Pwd, User],
 });
 export default (callback: (db: DataSource) => void) => {
   dataSource
