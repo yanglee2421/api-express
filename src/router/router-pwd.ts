@@ -1,14 +1,38 @@
 import { useDB } from "@/hook";
+import { Like } from "typeorm";
 import { Pwd } from "@/hook/useDB/entity";
 import { Router } from "express";
 const router = Router();
 export default router;
 useDB((db) => {
   router.get("/query", (req, res) => {
+    const {
+      pwd_site = "",
+      pwd_username = "",
+      page_index = 1,
+      page_size = 20,
+    } = req.query as Record<string, string>;
+    const query = {
+      pwd_site: Like(`%${pwd_site}%`),
+      pwd_username: Like(`%${pwd_username}%`),
+    };
+    const pagination = {
+      pageIndex: +page_index || 1,
+      pageSize: +page_size || 20,
+      total: 0,
+    };
     db.manager
-      .find(Pwd)
+      .count(Pwd, { where: [query], skip: (+page_index - 1) * +page_size })
+      .then((total) => {
+        pagination.total = total;
+        return db.manager.find(Pwd, {
+          where: [query],
+          skip: (pagination.pageIndex - 1) * pagination.pageSize,
+          take: pagination.pageSize,
+        });
+      })
       .then((rRes) => {
-        res.json({ isOk: true, data: rRes });
+        res.json({ isOk: true, rows: rRes, total: pagination.total });
       })
       .catch((err) => {
         console.error(err);
