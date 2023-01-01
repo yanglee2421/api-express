@@ -1,6 +1,6 @@
-const http = require("http");
-const server = http.createServer((request, response) => {
-  const str = request.url.replace(/^[\/]{1}[\?]?/g, "");
+import { createServer } from "node:http";
+const server = createServer((request, response) => {
+  const str = request.url?.replace(/^[\/]{1}[\?]?/g, "");
   const obj = new URLSearchParams(str);
   console.log(obj.keys());
   //encode(); //请求方的地址
@@ -13,6 +13,6 @@ const server = http.createServer((request, response) => {
  * 22：SSH服务的默认端口
  * 53：DNS服务的默认端口
  */
-server.listen(443, (err) => {
-  console.log(err ? err : "待机中。。。");
+server.listen(443, () => {
+  console.log("待机中。。。");
 });

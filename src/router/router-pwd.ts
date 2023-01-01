@@ -1,7 +1,7 @@
-import { useDB } from "@/hook";
-import { Like } from "typeorm";
-import { Pwd } from "@/hook/useDB/entity";
 import { Router } from "express";
+import { Like } from "typeorm";
+import { useDB } from "@/hook";
+import { Pwd } from "@/hook/useDB/entity";
 const router = Router();
 export default router;
 useDB((db) => {

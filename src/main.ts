@@ -1,12 +1,11 @@
+import { createServer } from "node:http";
+import path from "node:path";
 import history from "connect-history-api-fallback";
-import express from "express";
-import { createServer } from "http";
 import cors from "cors";
-import useCors from "@/hook/useCors";
+import express from "express";
+import { useCors, uselog } from "@/hook";
 import { useVerify } from "@/hook/useJWT";
 import { redRouter, bingRouter, file, login, pwd } from "@/router";
-import { uselog } from "@/hook";
-const rootUrl = "C:\\Users\\xtcff\\Desktop\\AdGuard\\";
 const server = express();
 createServer(server).listen(80, () => {
   console.info("service is standing by");
@@ -29,6 +28,14 @@ server.use("/pwd", useCors(), useVerify(), pwd);
  * 部署网页
  */
 server
-  .use("/public", express.static(rootUrl + "public"))
-  .use("/vue", history(), express.static(rootUrl + "page\\vue-app"))
-  .use("/react", history(), express.static(rootUrl + "page\\react-app"));
+  .use("/public", express.static(path.resolve(__dirname, "../public")))
+  .use(
+    "/vue",
+    history(),
+    express.static(path.resolve(__dirname, "../page/vue-app"))
+  )
+  .use(
+    "/react",
+    history(),
+    express.static(path.resolve(__dirname, "../page/react-app"))
+  );

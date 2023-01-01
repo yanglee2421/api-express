@@ -1,13 +1,14 @@
 import axios, { AxiosRequestConfig } from "axios";
 const request = axios.create({
-  timeout: 60000,
   baseURL: "",
+  timeout: 60000,
+  headers: {
+    common: {
+      "Content-Type": `application/json;charset=utf-8`,
+    },
+  },
 });
-request.interceptors.request.use((config) => {
-  if (!config.headers) return config;
-  config.headers["Content-Type"] = "application/json;charset=utf-8";
-  return config;
-});
+request.interceptors.request.use((config) => config);
 request.interceptors.response.use(
   (res) => {
     const { data, status, statusText } = res;

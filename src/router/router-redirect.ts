@@ -1,6 +1,7 @@
 import { Router } from "express";
 import HPImageArchive from "@/api/HPImageArchive";
 const router = Router();
+export default router;
 /**
  * 重定向路由
  */
@@ -14,4 +15,3 @@ router.get("/redirect/*", (req, res) => {
       res.writeHead(500);
     });
 });
-export default router;
