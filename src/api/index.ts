@@ -1,2 +1,2 @@
-export { default as HPImageArchive } from "./HPImageArchive";
+export { default as HPImageArchive } from "./api-bing";
 export { default as default } from "./request";

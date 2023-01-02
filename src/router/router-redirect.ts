@@ -1,5 +1,5 @@
 import { Router } from "express";
-import HPImageArchive from "@/api/HPImageArchive";
+import { HPImageArchive } from "@/api";
 const router = Router();
 export default router;
 /**
