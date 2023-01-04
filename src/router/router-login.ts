@@ -3,7 +3,9 @@ import { useSign } from "@/hook/useJWT";
 import { useDB } from "@/hook";
 import { User } from "@/hook/useDB/entity";
 const router = Router();
+export default router;
 useDB((db) => {
+  // 登录接口
   router.post("/login", (req, res) => {
     const { password = "", username = "" } = req.body as Record<string, string>;
     db.manager.find(User, { where: [{ user_name: username }] }).then((qRes) => {
@@ -13,13 +15,14 @@ useDB((db) => {
           isOk: true,
           token,
           username,
-          invalidTime: Date.now() + 1000 * 60 * 60 * 10,
+          invalidTime: Date.now() + 1000 * 3600 * 24 * 7,
         });
         return;
       }
       res.json({ isOk: false, mes: "用户名或密码错误" });
     });
   });
+  // 注册接口
   router.post("/register", (req, res) => {
     const { password = "", username = "" } = req.body as Record<string, string>;
     db.manager.find(User, { where: [{ user_name: username }] }).then((qRes) => {
@@ -38,6 +41,7 @@ useDB((db) => {
       });
     });
   });
+  // 查询所有用户
   router.get("/query", (req, res) => {
     db.manager
       .find(User)
@@ -46,9 +50,10 @@ useDB((db) => {
       })
       .catch((err) => {
         console.error(err);
-        res.json({ isOk: false, mes: "出错了" });
+        res.json({ isOk: false, mes: "系统内部错误" });
       });
   });
+  // 删除某个用户
   router.delete("/del/:id", (req, res) => {
     const { id = "" } = req.params;
     db.manager
@@ -70,4 +75,3 @@ useDB((db) => {
       });
   });
 });
-export default router;

@@ -3,7 +3,7 @@ const SPK = "swz-node";
 export const useSign = (payload: any) =>
   sign(payload, SPK, {
     algorithm: "HS256",
-    expiresIn: "10h",
+    expiresIn: "7d",
   });
 export const useVerify = () => (req: any, res: any, next: () => void) => {
   const bearerHeader = req.headers["authorization"];
