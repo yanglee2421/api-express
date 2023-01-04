@@ -1,4 +1,5 @@
 import cors from "cors";
+
 const whiteList = [
   "http://127.0.0.1",
   "http://localhost",
@@ -7,6 +8,6 @@ const whiteList = [
 
 export default () =>
   cors((req, callback) => {
-    const origin = whiteList.includes(req.headers.origin || "") ? true : false;
+    const origin = whiteList.includes(req.headers.origin || "");
     callback(null, { origin });
   });
