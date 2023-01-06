@@ -1,31 +1,32 @@
-import { clear } from "node:console";
 import fs from "node:fs/promises";
 import path from "node:path";
-/* const filePath = path.resolve(__dirname, "../hook/uselog/log.txt");
-// file
-fs.appendFile(filePath, "xxx", { encoding: "utf-8" });
-fs.rm(path.resolve(__dirname, "./l.txt"));
-fs.copyFile(filePath, path.resolve(__dirname, "./l.txt"));
-fs.rename(filePath, path.resolve(__dirname, "./l.txt"));
-fs.readFile(filePath);
-// folder
-fs.mkdir(path.resolve(__dirname, "./dir"));
-fs.rmdir(path.resolve(__dirname, "./dir"));
- */
-const str = "这是一段很长很长的话，真的很长很长的话！";
-const fun = (str: string, isOver: boolean) =>
-  new Promise((resolve) => {
-    console.log(str);
-    isOver &&
-      setTimeout(() => {
-        console.clear();
-        resolve(str);
-      }, 200);
-  });
-let target = "";
-(async () => {
-  for (const s of str) {
-    target += s;
-    const i = await fun(target, target.length !== str.length);
-  }
-})();
+const filePath = path.resolve(__dirname, "../README.md");
+const neoPath = path.resolve(__dirname, "./l.txt");
+// 追写
+fs.appendFile(filePath, "")
+  .then((res) => {})
+  .catch((err) => {});
+// 读
+fs.readFile(filePath)
+  .then((file) => {})
+  .catch((err) => {});
+// 删文件or文件夹
+fs.rm(filePath)
+  .then((res) => {})
+  .catch((err) => {});
+// 复制
+fs.copyFile(filePath, neoPath)
+  .then((res) => {})
+  .catch((err) => {});
+// 重命名
+fs.rename(filePath, neoPath)
+  .then((res) => {})
+  .catch((err) => {});
+// 创建folder
+fs.mkdir(filePath)
+  .then((res) => {})
+  .catch((err) => {});
+// 移除folder
+fs.rmdir(filePath)
+  .then((res) => {})
+  .catch((err) => {});
