@@ -1,2 +1,3 @@
-const err = JSON.stringify(new Error("有问题").message);
-console.log(err);
+Promise.reject(new Error("upstream error")).catch(({ message }) => {
+  console.log(message);
+});

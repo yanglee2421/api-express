@@ -32,7 +32,7 @@ useDB((db) => {
         user.user_pwd = password;
         return db.manager.save(user);
       })
-      .then((rows) => res.json({ isOk: true, rows, mes: "注册成功" }))
+      .then((rows) => res.json({ isOk: true, rows, message: "注册成功" }))
       .catch(({ message }) => res.json({ isOk: false, message }));
   });
   // 查询所有用户
