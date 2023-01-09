@@ -31,7 +31,7 @@ useDB((db) => {
         });
       })
       .then((rows) => res.json({ isOk: true, rows, total: pagi.total }))
-      .catch((mes) => res.json({ isOk: false, mes }));
+      .catch(({ message }) => res.json({ isOk: false, message }));
   });
   pwd.post("/save", (req, res) => {
     const { pwd_site, pwd_username, pwd_pwd } = req.body;
@@ -42,14 +42,14 @@ useDB((db) => {
     db.manager
       .save(Pwd, pwd)
       .then((rows) => res.json({ isOk: true, rows }))
-      .catch((mes) => res.json({ isOk: false, mes }));
+      .catch(({ message }) => res.json({ isOk: false, message }));
   });
   pwd.get("/query/:id", (req, res) => {
     const { id } = req.params;
     db.manager
       .findOneByOrFail(Pwd, { pwd_id: id })
       .then((data) => res.json({ isOk: true, data }))
-      .catch((mes) => res.json({ isOk: false, mes }));
+      .catch(({ message }) => res.json({ isOk: false, message }));
   });
   pwd.delete("/delete/:id", (req, res) => {
     const { id } = req.params;
@@ -57,6 +57,6 @@ useDB((db) => {
       .findOneByOrFail(Pwd, { pwd_id: id })
       .then((rRes) => db.manager.remove(Pwd, rRes))
       .then((data) => res.json({ isOk: true, data }))
-      .catch((mes) => res.json({ isOk: false, mes }));
+      .catch(({ message }) => res.json({ isOk: false, message }));
   });
 });

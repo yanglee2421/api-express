@@ -1,7 +1,2 @@
-Promise.resolve()
-  .then(() => {
-    throw "xxxxxx";
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+const err = JSON.stringify(new Error("有问题").message);
+console.log(err);

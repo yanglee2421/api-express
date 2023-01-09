@@ -7,12 +7,12 @@ joke.get("", (req, res) => {
   fetch(url, { method: "get", headers: new Headers() })
     .then((res) => {
       if (res.ok) return res.json();
-      throw "upstream error";
+      throw new Error("upstream error");
     })
     .then((data) => {
       const { code, data: rows, mes } = data;
       if (code === 200) return res.json({ isOk: true, rows });
-      throw mes;
+      throw new Error(mes);
     })
-    .catch((mes) => res.json({ isOk: false, mes }));
+    .catch(({ message }) => res.json({ isOk: false, message }));
 });
