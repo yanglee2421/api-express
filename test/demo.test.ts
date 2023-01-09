@@ -3,7 +3,7 @@ const url = new URL("https://autumnfish.cn/api/joke/list");
 url.searchParams.set("num", "1");
 // 处理 headers
 const headers = new Headers();
-headers.set("Authorization", `Bearer ${localStorage?.getItem?.("token")}`);
+headers.set("Authorization", `Bearer ${localStorage.getItem("token")}`);
 headers.set("Content-Type", "application/json;charset=utf-8");
 // 处理请求体
 const body = JSON.stringify({});
@@ -11,10 +11,9 @@ const body = JSON.stringify({});
 fetch(url, {
   method: "get",
   headers,
-  // body,
+  body,
 })
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
   });
-function localStorage() {}

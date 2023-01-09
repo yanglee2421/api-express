@@ -23,7 +23,7 @@ server
 server.use("/auth", useCors(), login);
 server.use("/api", useCors(), useVerify(), file);
 server.use("/pwd", useCors(), useVerify(), pwd);
-server.use("joke", useCors(), useVerify(), joke);
+server.use("/joke", useCors(), useVerify(), joke);
 /**
  * 部署网页
  */
