@@ -20,5 +20,5 @@ bing.get("/bing", (req, res) => {
     .then(({ images }: Type.res) =>
       res.json({ isOk: true, rows: images.map((item) => bingUrl + item.url) })
     )
-    .catch((mes) => res.json({ isOk: false, mes }));
+    .catch(({ message }) => res.json({ isOk: false, message }));
 });

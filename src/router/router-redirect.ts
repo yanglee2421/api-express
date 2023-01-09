@@ -17,5 +17,5 @@ redirect.get("/redirect/*", (req, res) => {
   fetch(url, { method: "get", headers: new Headers() })
     .then((res) => (res.ok ? res.json() : Promise.reject("upstream error")))
     .then(({ images }: Type.res) => res.redirect(bingUrl + images[0]))
-    .catch((mes) => res.json({ isOk: false, mes }));
+    .catch(({ message }) => res.json({ isOk: false, message }));
 });
