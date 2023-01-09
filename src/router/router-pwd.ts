@@ -16,36 +16,21 @@ useDB((db) => {
       pwd_username: Like(`%${pwd_username}%`),
     };
     const pagi = {
-      pageIndex: +page_index || 1,
-      pageSize: +page_size || 20,
+      index: +page_index || 1,
+      size: +page_size || 20,
       total: 0,
     };
     db.manager
-      .count(Pwd, { where: [query], skip: (+page_index - 1) * +page_size })
+      .count(Pwd, { where: [query], skip: (pagi.index - 1) * pagi.size })
       .then((total) => {
         pagi.total = total;
         return db.manager.find(Pwd, {
           where: [query],
-          skip: (pagi.pageIndex - 1) * pagi.pageSize,
-          take: pagi.pageSize,
+          skip: (pagi.index - 1) * pagi.size,
+          take: pagi.size,
         });
       })
       .then((rows) => res.json({ isOk: true, rows, total: pagi.total }))
-      .catch((mes) => res.json({ isOk: false, mes }));
-  });
-  pwd.get("/query/:id", (req, res) => {
-    const { id } = req.params;
-    db.manager
-      .findOne(Pwd, { where: [{ pwd_id: id }] })
-      .then((data) => res.json({ isOk: true, data }))
-      .catch((mes) => res.json({ isOk: false, mes }));
-  });
-  pwd.delete("/delete/:id", (req, res) => {
-    const { id } = req.params;
-    db.manager
-      .findOne(Pwd, { where: [{ pwd_id: id }] })
-      .then((rRes) => db.manager.remove(Pwd, rRes))
-      .then((data) => res.json({ isOk: true, data }))
       .catch((mes) => res.json({ isOk: false, mes }));
   });
   pwd.post("/save", (req, res) => {
@@ -55,7 +40,22 @@ useDB((db) => {
     pwd.pwd_username = pwd_username;
     pwd.pwd_pwd = pwd_pwd;
     db.manager
-      .save(Pwd, [pwd])
+      .save(Pwd, pwd)
+      .then((rows) => res.json({ isOk: true, rows }))
+      .catch((mes) => res.json({ isOk: false, mes }));
+  });
+  pwd.get("/query/:id", (req, res) => {
+    const { id } = req.params;
+    db.manager
+      .findOneByOrFail(Pwd, { pwd_id: id })
+      .then((data) => res.json({ isOk: true, data }))
+      .catch((mes) => res.json({ isOk: false, mes }));
+  });
+  pwd.delete("/delete/:id", (req, res) => {
+    const { id } = req.params;
+    db.manager
+      .findOneByOrFail(Pwd, { pwd_id: id })
+      .then((rRes) => db.manager.remove(Pwd, rRes))
       .then((data) => res.json({ isOk: true, data }))
       .catch((mes) => res.json({ isOk: false, mes }));
   });

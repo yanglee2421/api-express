@@ -18,7 +18,7 @@ bing.get("/bing", (req, res) => {
   fetch(url, { method: "get", headers: new Headers() })
     .then((res) => (res.ok ? res.json() : Promise.reject("upstream error")))
     .then(({ images }: Type.res) =>
-      res.json({ isOk: true, images: images.map((item) => bingUrl + item.url) })
+      res.json({ isOk: true, rows: images.map((item) => bingUrl + item.url) })
     )
     .catch((mes) => res.json({ isOk: false, mes }));
 });
