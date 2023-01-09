@@ -1,5 +1,9 @@
 import { Router } from "express";
-// import { HPImageArchive } from "@/api";
+namespace Type {
+  export interface res {
+    images: any[];
+  }
+}
 /**
  * 代理必应每日壁纸接口
  */
@@ -10,18 +14,11 @@ bing.get("/bing", (req, res) => {
   url.searchParams.set("format", "js");
   url.searchParams.set("idx", idx);
   url.searchParams.set("n", n);
+  const bingUrl = "https://cn.bing.com";
   fetch(url, { method: "get", headers: new Headers() })
     .then((res) => (res.ok ? res.json() : Promise.reject("upstream error")))
-    .then(({ images }) =>
-      res.json({
-        isOk: true,
-        images: images.map((item: any) => `https://cn.bing.com${item.url}`),
-      })
+    .then(({ images }: Type.res) =>
+      res.json({ isOk: true, images: images.map((item) => bingUrl + item.url) })
     )
     .catch((mes) => res.json({ isOk: false, mes }));
-  /* HPImageArchive({ idx, n })
-    .then(({ images }) =>
-      res.json(images.map((item) => `https://cn.bing.com${item.url}`))
-    )
-    .catch((err) => res.writeHead(500)); */
 });
