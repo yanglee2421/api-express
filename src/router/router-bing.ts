@@ -3,9 +3,8 @@ import { HPImageArchive } from "@/api";
 /**
  * 代理必应每日壁纸接口
  */
-const router = Router();
-export default router;
-router.get("/bing", (req, res) => {
+export const bing = Router();
+bing.get("/bing", (req, res) => {
   const { idx = 0, n = 8 } = req.query as unknown as { idx: number; n: number };
   HPImageArchive({ idx, n })
     .then(({ images }) => {

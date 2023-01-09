@@ -7,7 +7,7 @@ const dataSource = new DataSource({
   database: path.resolve(__dirname, "../database.sqlite3"),
   entities: [Pwd, User],
 });
-export default (callback: (db: DataSource) => void) => {
+export function useDB(callback: (db: DataSource) => void) {
   dataSource
     .initialize()
     .then(callback)
@@ -15,4 +15,4 @@ export default (callback: (db: DataSource) => void) => {
       console.error("数据库连接异常");
       console.error(err);
     });
-};
+}

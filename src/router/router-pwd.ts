@@ -2,10 +2,9 @@ import { Router } from "express";
 import { Like } from "typeorm";
 import { useDB } from "@/hook";
 import { Pwd } from "@/hook/useDB/entity";
-const router = Router();
-export default router;
+export const pwd = Router();
 useDB((db) => {
-  router.get("/query", (req, res) => {
+  pwd.get("/query", (req, res) => {
     const {
       pwd_site = "",
       pwd_username = "",
@@ -16,7 +15,7 @@ useDB((db) => {
       pwd_site: Like(`%${pwd_site}%`),
       pwd_username: Like(`%${pwd_username}%`),
     };
-    const pagination = {
+    const pagi = {
       pageIndex: +page_index || 1,
       pageSize: +page_size || 20,
       total: 0,
@@ -24,53 +23,32 @@ useDB((db) => {
     db.manager
       .count(Pwd, { where: [query], skip: (+page_index - 1) * +page_size })
       .then((total) => {
-        pagination.total = total;
+        pagi.total = total;
         return db.manager.find(Pwd, {
           where: [query],
-          skip: (pagination.pageIndex - 1) * pagination.pageSize,
-          take: pagination.pageSize,
+          skip: (pagi.pageIndex - 1) * pagi.pageSize,
+          take: pagi.pageSize,
         });
       })
-      .then((rRes) => {
-        res.json({ isOk: true, rows: rRes, total: pagination.total });
-      })
-      .catch((err) => {
-        console.error(err);
-        res.json({ isOk: false, mes: "数据库出了一点问题" });
-      });
+      .then((rows) => res.json({ isOk: true, rows, total: pagi.total }))
+      .catch((mes) => res.json({ isOk: false, mes }));
   });
-  router.get("/query/:id", (req, res) => {
+  pwd.get("/query/:id", (req, res) => {
     const { id } = req.params;
     db.manager
       .findOne(Pwd, { where: [{ pwd_id: id }] })
-      .then((rRes) => {
-        if (rRes) {
-          res.json({ isOk: true, data: rRes });
-          return;
-        }
-        res.json({ isOk: false, mes: "查无此条" });
-      })
-      .catch((err) => {
-        console.error(err);
-        res.json({ isOk: false, mes: "数据库出了一点问题" });
-      });
+      .then((data) => res.json({ isOk: true, data }))
+      .catch((mes) => res.json({ isOk: false, mes }));
   });
-  router.delete("/delete/:id", (req, res) => {
+  pwd.delete("/delete/:id", (req, res) => {
     const { id } = req.params;
     db.manager
       .findOne(Pwd, { where: [{ pwd_id: id }] })
-      .then((rRes) => {
-        return db.manager.remove(Pwd, rRes);
-      })
-      .then((dRes) => {
-        res.json({ isOk: true, data: dRes });
-      })
-      .catch((err) => {
-        console.error(err);
-        res.json({ isOk: false, mes: "数据库出了一点问题" });
-      });
+      .then((rRes) => db.manager.remove(Pwd, rRes))
+      .then((data) => res.json({ isOk: true, data }))
+      .catch((mes) => res.json({ isOk: false, mes }));
   });
-  router.post("/save", (req, res) => {
+  pwd.post("/save", (req, res) => {
     const { pwd_site, pwd_username, pwd_pwd } = req.body;
     const pwd = new Pwd();
     pwd.pwd_site = pwd_site;
@@ -78,12 +56,7 @@ useDB((db) => {
     pwd.pwd_pwd = pwd_pwd;
     db.manager
       .save(Pwd, [pwd])
-      .then((sRes) => {
-        res.json({ isOk: true, data: sRes });
-      })
-      .catch((err) => {
-        console.error(err);
-        res.json({ isOk: false, mes: "数据库出了一点问题" });
-      });
+      .then((data) => res.json({ isOk: true, data }))
+      .catch((mes) => res.json({ isOk: false, mes }));
   });
 });

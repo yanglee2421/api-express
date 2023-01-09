@@ -1,4 +1,4 @@
-export { default as useCors } from "./useCors";
-export { default as useDB } from "./useDB";
-export { default as uselog } from "./uselog";
-export { default as useJWT } from "./useJWT";
+export { useCors } from "./useCors";
+export { useDB } from "./useDB";
+export { uselog } from "./uselog";
+export { useSign, useVerify } from "./useJWT";

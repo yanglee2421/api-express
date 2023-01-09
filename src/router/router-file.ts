@@ -1,7 +1,7 @@
 import path from "node:path";
 import { Router } from "express";
-const router = Router();
-router
+export const file = Router();
+file
   /**
    * 服务接口
    */
@@ -19,4 +19,3 @@ router
   .get("/pic-raw", (req, res) => {
     res.download(path.resolve(__dirname, "../../../public/img/bg.jpg"));
   });
-export default router;

@@ -1,6 +1,7 @@
-export { default as bingRouter } from "./router-bing";
-export { default as redRouter } from "./router-redirect";
+export { bing } from "./router-bing";
+export { redirect } from "./router-redirect";
 // 校验
-export { default as login } from "./router-login";
-export { default as file } from "./router-file";
-export { default as pwd } from "./router-pwd";
+export { login } from "./router-login";
+export { file } from "./router-file";
+export { pwd } from "./router-pwd";
+export { joke } from "./router-joke";

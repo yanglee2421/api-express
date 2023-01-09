@@ -1,11 +1,10 @@
 import { Router } from "express";
 import { HPImageArchive } from "@/api";
-const router = Router();
-export default router;
+export const redirect = Router();
 /**
  * 重定向路由
  */
-router.get("/redirect/*", (req, res) => {
+redirect.get("/redirect/*", (req, res) => {
   HPImageArchive()
     .then(({ images }) => {
       const imgArr = images.map((item) => `https://cn.bing.com${item.url}`);

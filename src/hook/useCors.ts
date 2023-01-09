@@ -6,8 +6,9 @@ const whiteList = [
   "http://192.168.1.4",
 ];
 
-export default () =>
-  cors((req, callback) => {
+export function useCors() {
+  return cors((req, callback) => {
     const origin = whiteList.includes(req.headers.origin || "");
     callback(null, { origin });
   });
+}

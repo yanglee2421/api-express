@@ -3,9 +3,8 @@ import path from "node:path";
 import history from "connect-history-api-fallback";
 import cors from "cors";
 import express from "express";
-import { useCors, uselog } from "@/hook";
-import { useVerify } from "@/hook/useJWT";
-import { redRouter, bingRouter, file, login, pwd } from "@/router";
+import { useCors, uselog, useVerify } from "@/hook";
+import { redirect, bing, file, login, pwd, joke } from "@/router";
 const server = express();
 createServer(server).listen(80, () => {
   console.info("service is standing by");
@@ -19,11 +18,12 @@ server
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
   .use(uselog())
-  .use(bingRouter)
-  .use(redRouter);
+  .use(bing)
+  .use(redirect);
 server.use("/auth", useCors(), login);
 server.use("/api", useCors(), useVerify(), file);
 server.use("/pwd", useCors(), useVerify(), pwd);
+server.use("joke", useCors(), useVerify(), joke);
 /**
  * 部署网页
  */
