@@ -30,6 +30,11 @@ server.use("/joke", useCors(), useVerify(), joke);
 server
   .use("/public", express.static(path.resolve(__dirname, "../public")))
   .use(
+    "/docs",
+    history(),
+    express.static(path.resolve(__dirname, "../page/docs"))
+  )
+  .use(
     "/vue",
     history(),
     express.static(path.resolve(__dirname, "../page/vue-app"))
