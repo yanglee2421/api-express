@@ -1,2 +1,3 @@
-export { default as Pwd } from "./entityPwd";
-export { default as User } from "./entityUser";
+export { Pwd } from "./entityPwd";
+export { User } from "./entityUser";
+export { Joke } from "./entityJoke";

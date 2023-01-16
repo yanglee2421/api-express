@@ -1,11 +1,11 @@
 import path from "node:path";
 import { DataSource } from "typeorm";
-import { Pwd, User } from "./entity";
+import { Pwd, User, Joke } from "./entity";
 
 const dataSource = new DataSource({
   type: "sqlite",
   database: path.resolve(__dirname, "../database.sqlite3"),
-  entities: [Pwd, User],
+  entities: [Pwd, User, Joke],
 });
 export function useDB(callback: (db: DataSource) => void) {
   dataSource

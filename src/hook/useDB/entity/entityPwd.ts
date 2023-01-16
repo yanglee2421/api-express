@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 @Entity({ name: "Table_Pwd" })
-class Pwd {
+export class Pwd {
   @PrimaryGeneratedColumn("uuid")
   pwd_id: string;
   @Column({ type: "text", length: 20 })
@@ -10,4 +10,3 @@ class Pwd {
   @Column({ type: "text", length: 20 })
   pwd_pwd: string;
 }
-export default Pwd;
