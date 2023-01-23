@@ -28,6 +28,7 @@ useDB((db) => {
           where: [query],
           skip: (pagi.index - 1) * pagi.size,
           take: pagi.size,
+          order: { pwd_site: "asc", pwd_username: "asc" },
         });
       })
       .then((rows) => res.json({ isOk: true, rows, total: pagi.total }))
